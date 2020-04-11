@@ -14,6 +14,16 @@ body {
         width: 950px;
         margin: auto;
         padding: 0px 0;
+        .page-top {
+            text-align: right;
+            span {
+                .fa-check-square-o:before {
+                    padding: 0 1px;
+                    color: #fff;
+                    content: '\f62'; /*アイコンの種類*/
+                }
+            }
+        }
     }
 }
 
@@ -29,6 +39,7 @@ a {
     text-decoration: none;
 }
 
-.fa-check-square-o:before {
-    content: '\f07a'; /*アイコンの種類*/
+sup {
+    font-size: small;
+    vertical-align: text-top;
 }

@@ -1,2 +1,2 @@
-cd C:\Users\fujit\Desktop\moha_Norton
+cd C:\Users\fujit\Desktop\NortonLP
 npx gulp

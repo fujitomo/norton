@@ -21,6 +21,17 @@ body {
   padding: 0px 0;
 }
 
+.wrapper .contents .page-top {
+  text-align: right;
+}
+
+.wrapper .contents .page-top span .fa-check-square-o:before {
+  padding: 0 1px;
+  color: #fff;
+  content: '\f62';
+  /*アイコンの種類*/
+}
+
 .sp {
   display: none;
 }
@@ -30,9 +41,9 @@ a {
   text-decoration: none;
 }
 
-.fa-check-square-o:before {
-  content: '\f07a';
-  /*アイコンの種類*/
+sup {
+  font-size: small;
+  vertical-align: text-top;
 }
 
 .header {
@@ -455,7 +466,7 @@ a {
 }
 
 .relief {
-  margin: auto;
+  margin: 33px auto;
 }
 
 .relief__title {
@@ -469,8 +480,24 @@ a {
   border-radius: 5px;
 }
 
+.relief__title h2 {
+  font-weight: normal;
+}
+
 .relief__list__clumn {
   text-align: left;
+}
+
+.relief__list__clumn--kome1 {
+  font-size: 12px;
+  font-size: 0.8rem;
+  margin-top: 11px;
+}
+
+.relief__list__clumn--kome2 {
+  font-size: 12px;
+  font-size: 0.8rem;
+  padding-left: 12px;
 }
 
 .relief__list dl {
@@ -480,11 +507,11 @@ a {
 
 .relief__list dl dt {
   margin: 36px 0px;
-  padding: 14px 29px;
+  padding: 14px 20px;
   font-weight: bold;
   border-bottom: 1px solid #fdbb30;
-  font-size: 21px;
-  font-size: 1.4rem;
+  font-size: 28px;
+  font-size: 1.86667rem;
 }
 
 .relief__list dl span {
@@ -494,7 +521,92 @@ a {
 
 .relief__list dl dd {
   margin: -23px 0;
-  padding: 14px 27px;
+  padding: 14px 22px;
   font-size: 20px;
   font-size: 1.33333rem;
+}
+
+.relief__list dl dd a {
+  color: #f15500;
+}
+
+.relief__list dl dd a:hover {
+  text-decoration: underline;
+}
+
+.relief__list dl dd a::after {
+  margin: 0 5px 0 5px;
+  padding-right: 13px;
+  background: url(../images/icon_newwin.png) no-repeat 0 0;
+  background-size: contain;
+  content: '';
+}
+
+.relief__button {
+  width: 600px;
+  height: 73px;
+  margin: 0 auto;
+  padding: 29px 0px 0px 13px;
+  background-color: #02740f;
+  border-radius: 5px;
+  font-size: 28px;
+  font-size: 1.86667rem;
+}
+
+.relief__button .fa-check-square-o:before {
+  padding: 0 1px;
+  color: #fff;
+  content: '\f07a';
+  /*アイコンの種類*/
+}
+
+.relief__button a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.defense {
+  margin: 62px auto;
+}
+
+.defense__title {
+  width: 100%;
+  padding: 23px 20px;
+  color: #ffffff;
+  text-align: left;
+  background-color: #0085c6;
+  border-radius: 5px;
+  font-size: 34px;
+  font-size: 2.26667rem;
+}
+
+.defense__title h2 {
+  font-weight: normal;
+}
+
+.defense__figure img {
+  max-width: 100%;
+}
+
+.defense__button {
+  width: 600px;
+  height: 73px;
+  margin: 40px auto;
+  padding: 29px 0px 0px 13px;
+  background-color: #02740f;
+  border-radius: 5px;
+  font-size: 28px;
+  font-size: 1.86667rem;
+}
+
+.defense__button .fa-check-square-o:before {
+  padding: 0 1px;
+  color: #fff;
+  content: '\f07a';
+  /*アイコンの種類*/
+}
+
+.defense__button a {
+  color: #ffffff;
+  font-weight: bold;
 }
