@@ -1,0 +1,74 @@
+﻿.topbanner {
+    margin-top: 35px;
+    &__text {
+        position: relative;
+        top: -152px;
+        left: 247px;
+        &__icon {
+            position: absolute;
+            left: 17px;
+        }
+        &__p_name {
+            position: absolute;
+            top: 27px;
+            left: -5px;
+            width: 354px;
+            font-weight: bold;
+            @include fontsize(19, $root_font_pc_size);
+
+            span {
+                padding: 0 5px;
+                border: 1px solid #555555;
+            }
+        }
+        &__price {
+            position: absolute;
+            top: 64px;
+            left: -86px;
+            width: 354px;
+            font-weight: bold;
+            @include fontsize(30, $root_font_pc_size);
+            span {
+                @include fontsize(16, $root_font_pc_size);
+            }
+        }
+
+        &__day_price {
+            position: relative;
+            top: -54px;
+            left: 265px;
+            width: 162px;
+            height: 34px;
+            padding: 9px 11px 1px 11px;
+            color: $color_strong_price;
+            font-weight: bold;
+            @include fontsize(17, $root_font_pc_size);
+            background: $color_main;
+            border-radius: 20px;
+            @include fontsize(17, $root_font_pc_size);
+        }
+        &__button {
+            position: relative;
+            top: -126px;
+            left: 464px;
+            width: 200px;
+            height: 73px;
+            padding: 29px 0px 0px 13px;
+            background-color: $color_button;
+            border-radius: 5px;
+            .fa-check-square-o:before {
+                padding: 0 1px;
+                color: #fff;
+                content: '\f07a'; /*アイコンの種類*/
+            }
+            a {
+                color: $color_main;
+                font-weight: bold;
+                @include fontsize(16, $root_font_pc_size);
+            }
+        }
+    }
+    &__link {
+        margin-top: -87px;
+    }
+}

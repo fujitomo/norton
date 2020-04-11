@@ -1,0 +1,213 @@
+﻿.package-list {
+    &__table {
+        margin-top: 5px;
+        &__top {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            background: url(/images/four_top_bg.jpg) no-repeat 0 0;
+            &__th {
+                p {
+                    font-weight: bold;
+                }
+                position: relative;
+                top: 57px;
+                left: -52px;
+                width: 200px;
+                height: 135px;
+                margin-top: -5px;
+                color: $color_main;
+                font-size: 16px;
+                font-size: 1.06667rem;
+                @include fontsize(16, $root_font_pc_size);
+                span {
+                    @include fontsize(12, $root_font_pc_size);
+                    position: relative;
+                    top: 9px;
+                    font-weight: bold;
+                }
+            }
+            &__dx {
+                top: 41px;
+            }
+        }
+        &__Adjustment {
+            height: 130px;
+        }
+        &__tr {
+            display: table;
+            height: 85px;
+            margin-left: 2px;
+            border-bottom: 1.5px solid $color_cell_line;
+
+            &__td {
+                display: table-cell;
+                width: 196px;
+                vertical-align: middle;
+                background-color: $color_cell_td;
+
+                &--title {
+                    position: relative;
+                    display: table-cell;
+                    width: 149px;
+                    vertical-align: middle;
+                    background-color: $color_cell_title;
+                    p {
+                        @include fontsize(13, $root_font_pc_size);
+                        position: relative;
+                        top: 62px;
+                    }
+                }
+                &--title2 {
+                    display: table-cell;
+                    width: 149px;
+                    vertical-align: middle;
+                    background-color: $color_cell_title;
+                    p {
+                        padding: 0 5px;
+                        text-align: left;
+                        @include fontsize(13, $root_font_pc_size);
+                        span {
+                            @include fontsize(10, $root_font_pc_size);
+                        }
+                    }
+                }
+                &--space {
+                    display: table-cell;
+                    width: 2px;
+                    background-color: $color_main;
+                }
+                &--td2 {
+                    width: 199px;
+                    border-left: 1.5px solid $color_cell_line;
+                }
+                &--dx {
+                    width: 203px;
+                    background-color: $color_cell_dx;
+                    border-right: 3.5px solid $color_cell_dxline;
+                    border-left: 3.5px solid $color_cell_dxline;
+                }
+
+                &--link {
+                    margin: 14px 0;
+                    text-decoration: underline;
+                    @include fontsize(13, $root_font_pc_size);
+                }
+
+                &--price {
+                    margin-top: 25px;
+                    color: $color_strong_price;
+                    font-weight: bold;
+                    @include fontsize(32, $root_font_pc_size);
+                    span {
+                        color: $color_main_font;
+                        @include fontsize(13, $root_font_pc_size);
+                    }
+                }
+                &--tax-price {
+                    margin-right: -43px;
+                    padding-top: 11px;
+                }
+                &--button {
+                    box-sizing: border-box;
+                    width: 171px;
+                    height: 42px;
+                    margin: 14px 0px;
+                    margin-left: 11px;
+                    padding: 12px 5px;
+                    a {
+                        color: $color_main;
+                        font-weight: bold;
+                    }
+                    text-align: center;
+                    background-color: $color_button;
+                    border: 1px solid $color_button;
+                    border-radius: 5px;
+                }
+                &--price2 {
+                    margin-top: 25px;
+                    margin-left: 23px;
+                    font-weight: bold;
+                    @include fontsize(23, $root_font_pc_size);
+                    span {
+                        color: $color_main_font;
+                        @include fontsize(13, $root_font_pc_size);
+                    }
+                }
+                &--button-link {
+                    margin: 21px 0;
+                    a {
+                        color: $color_button;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                }
+                &--non {
+                    @include fontsize(27, $root_font_pc_size);
+                    p {
+                        @include fontsize(13, $root_font_pc_size);
+                        position: relative;
+                        top: 53px;
+                        span {
+                            @include fontsize(1, $root_font_pc_size);
+                        }
+                    }
+                }
+                &--kome-mark {
+                    margin: 19px 0;
+                    p {
+                        @include fontsize(13, $root_font_pc_size);
+                        font-weight: bold;
+                        span {
+                            font-weight: normal;
+                            @include fontsize(1, $root_font_pc_size);
+                        }
+                    }
+                }
+                &--bold {
+                    font-weight: bold;
+                }
+            }
+            &--header {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 43px;
+                padding: 0 11px;
+                color: white;
+                font-weight: bold;
+                text-align: left;
+                background-color: $color_cell_line;
+                background-color: #666666;
+            }
+        }
+    }
+    &__Note {
+        padding-left: 11px;
+        li {
+            margin: 12px 0;
+            text-align: left;
+            list-style: none;
+            p {
+                @include fontsize(12, $root_font_pc_size);
+                line-height: 15px;
+                a {
+                    color: $color_guarantee;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &::after {
+                        margin: 0 5px 0 5px;
+                        padding-right: 13px;
+                        background: url(../images/icon_newwin.png) no-repeat 0 0;
+                        background-size: contain;
+                        content: '';
+                    }
+                }
+            }
+        }
+        &--space {
+            margin-left: 24px;
+        }
+    }
+}

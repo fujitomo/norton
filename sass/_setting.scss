@@ -1,0 +1,24 @@
+//ルートフォントサイズ
+$root_font_pc_size: 15;
+$root_font_sp_size: 12;
+
+$color_main: #ffffff;
+$color_side: #dddddd;
+$color_strong_price: #ff0000;
+$color_main_font: black;
+$color_button: #02740f;
+$color_header_button: #b5b5b5;
+$color_cell_td: #fff7d6;
+$color_cell_title: #eeeeee;
+$color_cell_line: #666666;
+$color_cell_dxline: #fd5200;
+$color_cell_dx: #ffe9a6;
+$color_guarantee: #f47c3b;
+$color_relief_title: #fdbb30;
+
+//fonts
+$font_body: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+    Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', 'sans-serif' !default;
+$html_font_size: 15px !default;
+$body_line_height: 1.65 !default;
+$body_letter_spacing: 0.004em !default;

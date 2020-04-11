@@ -1,0 +1,54 @@
+﻿.header {
+    display: flex;
+    &__logo {
+        width: 27%;
+        img {
+            max-width: 81%;
+            height: auto;
+            margin-top: 12px;
+            margin-left: 110px;
+        }
+    }
+    &__navi {
+        margin-top: 24px;
+        margin-left: 1px;
+
+        ul li {
+            display: inline-block;
+            @include fontsize(13, $root_font_pc_size);
+            vertical-align: middle;
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-border {
+            height: 18px;
+            padding: 0 12px;
+            padding-top: 4px;
+            border-right: 1px solid #999999;
+        }
+
+        &-support_icon {
+            margin: 0 0 0 5px;
+            padding-right: 13px;
+            background: url(../images/icon_newwin.png) no-repeat 0 0;
+            background-size: contain;
+            content: '';
+        }
+        &__btn {
+            box-sizing: border-box;
+            width: 129px;
+            height: 40px;
+            margin-top: 1px;
+            margin-left: 11px;
+            padding: 12px 5px;
+            text-align: center;
+            background: $color_main;
+            border: 1px solid $color_header_button;
+            .fa-check-square-o:before {
+                content: '\f07a'; /*アイコンの種類*/
+            }
+        }
+    }
+}

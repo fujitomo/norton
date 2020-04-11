@@ -1,0 +1,36 @@
+﻿.relief {
+    margin: auto;
+    &__title {
+        width: 100%;
+        padding: 23px 20px;
+        color: $color_main;
+        text-align: left;
+        background-color: $color_relief_title;
+        @include fontsize(34, $root_font_pc_size);
+        border-radius: 5px;
+    }
+    &__list {
+        &__clumn {
+            text-align: left;
+        }
+        dl {
+            display: flex;
+            margin: 53px 15px;
+            dt {
+                margin: 36px 0px;
+                padding: 14px 29px;
+                font-weight: bold;
+                border-bottom: 1px solid $color_relief_title;
+                @include fontsize(21, $root_font_pc_size);
+            }
+            span {
+                @include fontsize(40, $root_font_pc_size);
+            }
+            dd {
+                margin: -23px 0;
+                padding: 14px 27px;
+                @include fontsize(20, $root_font_pc_size);
+            }
+        }
+    }
+}
