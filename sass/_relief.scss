@@ -63,10 +63,11 @@
         width: 600px;
         height: 73px;
         margin: 0 auto;
-        padding: 29px 0px 0px 13px;
+        padding: 24px 0px 0px 13px;
         background-color: $color_button;
         border-radius: 5px;
         @include fontsize(28, $root_font_pc_size);
+
         .fa-check-square-o:before {
             padding: 0 1px;
             color: #fff;
@@ -75,6 +76,10 @@
         a {
             color: $color_main;
             font-weight: bold;
+            &:hover {
+                opacity: 0.9;
+                filter: brightness(110%);
+            }
         }
     }
 }

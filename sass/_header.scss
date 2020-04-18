@@ -1,5 +1,6 @@
 ﻿.header {
     display: flex;
+    margin-left: -59px;
     &__logo {
         width: 27%;
         img {
@@ -7,6 +8,7 @@
             height: auto;
             margin-top: 12px;
             margin-left: 110px;
+            cursor: pointer;
         }
     }
     &__navi {
@@ -26,7 +28,7 @@
             height: 18px;
             padding: 0 12px;
             padding-top: 4px;
-            border-right: 1px solid #999999;
+            border-right: 1px solid $color_header_line;
         }
 
         &-support_icon {
@@ -48,6 +50,10 @@
             border: 1px solid $color_header_button;
             .fa-check-square-o:before {
                 content: '\f07a'; /*アイコンの種類*/
+            }
+            cursor: pointer;
+            &:hover {
+                background: #f5f5f5;
             }
         }
     }

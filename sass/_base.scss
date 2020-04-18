@@ -6,7 +6,7 @@ body {
     background-color: $color_side !important;
 }
 .wrapper {
-    width: 1200px;
+    width: 1042px;
     margin: auto;
     text-align: center;
     background-color: $color_main;
@@ -16,11 +16,17 @@ body {
         padding: 0px 0;
         .page-top {
             text-align: right;
-            span {
+            p {
+                color: $color_strong_price;
+                cursor: pointer;
+                @include fontsize(14, $root_font_pc_size);
                 .fa-check-square-o:before {
-                    padding: 0 1px;
-                    color: #fff;
-                    content: '\f62'; /*アイコンの種類*/
+                    padding: 0 5px;
+                    color: $color_strong_price;
+                    content: '\f062'; /*アイコンの種類*/
+                }
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }

@@ -55,13 +55,13 @@
       <div class="header__navi">
         <nav>
           <ul>
-            <li class="header__navi-border"><a href="#">製品ラインナップ</a></li>
+            <li class="header__navi-border">製品ラインナップ</li>
             <li class="header__navi-border"><a href="#">30日間無料体験版</a></li>
             <li class="header__navi-border"><a href="#">お客様サポート<span
                   class="header__navi-support_icon"></span></span></a></li>
             <li><a href="#">お知らせ<span></span></a></li>
-            <li class="header__navi__btn"><a href="#" class="q">注文情報の確認</a></li>
-            <li class="header__navi__btn"><span class="fa fa-check-square-o"></span><a href="#" class="q">カート</a></li>
+            <li class="header__navi__btn">注文情報の確認</li>
+            <li class="header__navi__btn"><span class="fa fa-check-square-o">カート</li>
           </ul>
         </nav>
       </div>
@@ -90,10 +90,19 @@
             </div>
           </div>
           <div class="topbanner__link">
-            <figure><img src="images/nn360_main_banner.png" alt=""></figure>
+            <figure><img src="images/nn360_main_banner.png" alt="ノートンバナー"></figure>
           </div>
         </section>
-        <section class="package-list">
+        <section class="advertisement">
+          <div id="linebox" class="advertisement__line">
+            <img src="images/line_pc.jpg" alt="Line宣伝">
+            <span id="linebox_dlete">×</span>
+          </div>
+          <div class="advertisement__feedback">
+            フィードバック
+          </div>
+        </section>
+        <section class=" package-list">
           <div class="package-list__table">
             <div class="package-list__table__top">
               <div class="package-list__table__top__th"></div>
@@ -231,7 +240,8 @@
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td package-list__table__tr__td--non">-</div>
               <div
-                class="package-list__table__tr__td package-list__table__tr__td--td2 package-list__table__tr__td--non">-
+                class="package-list__table__tr__td package-list__table__tr__td--td2 package-list__table__tr__td--non">
+                -
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
                 <div class="package-list__table__tr__td--price2">
@@ -460,11 +470,13 @@
                 <p><span>※1 </span>当該製品の最長年数製品をご購入後、最大利用台数のデバイスにインストールしてご利用いただいた場合（税抜価格で計算、小数点第一位を四捨五入）</p>
               </li>
               <li>
-                <p><span>※2 </span>ノートン 自動オンラインバックアップ機能は Windows でのみ利用できます。ご使用のデバイスがインターネットプランまたはデータプランに加入しており、電源がオ</p>
+                <p><span>※2 </span>ノートン 自動オンラインバックアップ機能は Windows でのみ利用できます。ご使用のデバイスがインターネットプランまたはデータプランに加入しており、電源がオ
+                </p>
                 <p><span class="package-list__Note--space"></span>ンになっている必要があります。</p>
               </li>
               <li>
-                <p><span>※3 </span>ノートン プロテクション プロミス: ウイルス駆除サービス（ノートン プロテクション プロミス）を使用するには、有効なサブスクリプションを保有している必要があり</p>
+                <p><span>※3 </span>ノートン プロテクション プロミス: ウイルス駆除サービス（ノートン プロテクション プロミス）を使用するには、有効なサブスクリプションを保有している必要があり
+                </p>
                 <p><span class="package-list__Note--space"></span>ます。ノートン スモール
                   ビジネスを使用していない場合は、該当するサブスクリプションをシマンテックから直接購入、更新、アップグレードするか、シマンテックの</p>
                 <p><span
@@ -629,15 +641,36 @@
             <span class="fa fa-check-square-o"></span><a href="#">ご購入はこちら</a>
           </div>
         </section>
-        <div class="page-top">
-          <a href="#"><span class="fa fa-arrow-up"></span>ページの先頭へ戻る</a>
+        <div id="page_top" class="page-top">
+          <p><span class="fa fa-check-square-o"></span>ページの先頭へ戻る</p>
         </div>
       </div>
     </main>
-    <footer class=" footer">
-      <div class="content-wrapper"></div>
+    <footer class="footer">
+      <div class="footer__navi">
+        <ul>
+          <li><a href="#">利用規約</a>
+          </li>
+          <li><a href="#">個人情報保護方針</li></a>
+          <li><a href="#">個人情報利用について</li></a>
+          <li><a href="#">特定商取引法に基づく表示</li></a>
+        </ul>
+        <p><a href="#">サイトマップ</a></p>
+      </div>
+      <a href="#">商標・登録商標について</a>
+      <div class="footer__logo">
+        <p class="footer__logo__description">Norton by Symantec ロゴは Norton LifeLock ロゴに変わりました。
+          LifeLock™
+          個人情報盗難保護サービスが利用できない国があります。</p>
+        <div class="footer__logo__image">
+          <a href="#"></a><img src="images/getseal.gif" alt="ノートンロゴア" /></a>
+        </div>
+      </div>
+      <p class="footer__address">(c) 1995-2020 SB Technology Corp.</p>
+
     </footer>
   </div>
+
 </body>
 
 </html>
