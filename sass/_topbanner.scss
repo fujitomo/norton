@@ -3,16 +3,18 @@
     margin-top: 35px;
     img {
         max-width: 107%;
+        height: 100%;
         @include media(max-l) {
             max-width: 100%;
         }
+    }
+    &--margin {
+        margin-bottom: 107px;
     }
     @include media(max-xs) {
         display: none;
     }
     .header__logo {
-        @include media(max-l) {
-        }
         img {
             background: url(../images/logo_norton_sp.jpg) left top/64px auto
                 no-repeat;
@@ -20,12 +22,12 @@
     }
     &__text {
         position: absolute;
-        top: 148px;
-        left: 154px;
-        @include media(max-l) {
-            top: 92px;
-            left: 97px;
-        }
+        top: 31%;
+        left: 16%;
+        // @include media(max-l) {
+        //     top: 88px;
+        //     left: 114px;
+        // }
 
         &__icon {
             position: absolute;
@@ -60,8 +62,8 @@
 
         &__day_price {
             position: relative;
-            top: -54px;
-            left: 160px;
+            top: 99px;
+            left: 5px;
             width: 170px;
             height: 34px;
             padding: 9px 11px 1px 11px;
@@ -72,16 +74,16 @@
             @include fontsize(17, $root_font_size);
             @include fontsize(17, $root_font_size);
 
-            @include media(max-l) {
-                top: -43px;
-                left: 106px;
-            }
+            // @include media(max-l) {
+            //     top: -43px;
+            //     left: 106px;
+            // }
         }
         &__button {
             position: relative;
-            top: -126px;
-            left: 333px;
-            width: 20%;
+            top: 29px;
+            left: 212px;
+            width: 117%;
             height: 73px;
             padding: 29px 0px 0px 2px;
             background: transparent; /* 背景をリセット */
@@ -105,11 +107,11 @@
                 opacity: 0.9;
                 filter: brightness(110%);
             }
-            @include media(max-l) {
-                top: -118px;
-                left: 286px;
-                //width: 150px;
-            }
+            // @include media(max-l) {
+            //     top: -118px;
+            //     left: 286px;
+            //     //width: 150px;
+            // }
         }
     }
     &__link {
