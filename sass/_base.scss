@@ -1,25 +1,39 @@
 html {
-    font-size: $html_font_size;
+    font-size: $root_font_size;
 }
+
 body {
     font-family: $font_body;
     background-color: $color_side !important;
+    //$root_font_size: $root_font_size;
 }
+
 .wrapper {
-    width: 1042px;
-    margin: auto;
+    @include media(min-l) {
+        width: 1042px;
+    }
+
+    margin: 0 auto;
+
+    padding: 0 20px;
     text-align: center;
     background-color: $color_main;
     .contents {
-        width: 950px;
+        @include media(max-xs) {
+            //width: 950px;
+            padding: 0 20px;
+        }
         margin: auto;
         padding: 0px 0;
         .page-top {
+            @include media(max-xs) {
+                display: none;
+            }
             text-align: right;
             p {
                 color: $color_strong_price;
                 cursor: pointer;
-                @include fontsize(14, $root_font_pc_size);
+                @include fontsize(14, $root_font_size);
                 .fa-check-square-o:before {
                     padding: 0 5px;
                     color: $color_strong_price;
@@ -31,13 +45,32 @@ body {
             }
         }
     }
+    .fa-check-square-o:before {
+        padding: 0 5px;
+        content: '\f07a'; /*アイコンの種類*/
+    }
+    .fa-angle-left:before {
+        padding: 0 5px;
+        color: white;
+        content: '\f104'; /*アイコンの種類*/
+    }
+    .fa-angle-right:before {
+        padding: 0 5px;
+        color: white;
+        content: '\f105'; /*アイコンの種類*/
+    }
 }
 
 .pc {
+    @include media(max-xs) {
+        display: none;
+    }
 }
 
 .sp {
-    display: none;
+    @include media(min-xs) {
+        display: none;
+    }
 }
 
 a {

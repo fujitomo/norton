@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>ウイルス対策のノートンセキュリティソフト｜ノートンストア</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="images/favicon.ico " type="image/vnd.microsoft.icon" />
   <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
@@ -42,7 +40,7 @@
   <meta name="description" content="iSara[イサラ]とは「稼ぐこと」にフォーカスしたエンジニア育成講座（実質０円）です。
 　　　　　　　　　　　　　　　　　　　　 iSaraで「基本的なプログラミングスキル」は教えません。基礎的なプログラミングスキルは無料で学べる時代。
                                            iSaraでは、基礎知識学習は事前課題とチャットサポートのみ。さぁ、稼ぐスキルを身に着けましょう。" />
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/event.js"></script>
 </head>
 
@@ -50,15 +48,43 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__logo">
-        <h1><img src="images/images.png" alt="ウイルス対策のノートンセキュリティソフト｜ノートンストア" /></h1>
+        <h1><img src="images/logo_norton.jpg" alt="ウイルス対策のノートンセキュリティソフト｜ノートンストア" /></h1>
       </div>
-      <div class="header__navi">
+
+      <div class="header__navi-sp">
+        <div class="header__cart">
+          <a href="/cart/epe/">
+            <img src="images/jp_sp_cart.png" alt="カート" width="34">
+          </a>
+        </div>
+
+        <nav class="global-nav sp">
+          <ul class="global-nav__list">
+            <li class="global-nav__list-border"><a href="#">製品とサービス</a></li>
+            <li class="global-nav__list-border"><a href="#">30日間無料体験版</a></li>
+            <li class="global-nav__list-border"><a href="#">お客様サポート<span
+                  class="header__navi-support_icon"></span></span></a>
+            </li>
+            <li class="global-nav__list-border"><a href="#">お知らせ<span></span></a></li>
+            <li class="global-nav__list-border"><a href="#">注文情報の確認</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger sp" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+
+      <div class="header__navi pc">
         <nav>
           <ul>
-            <li class="header__navi-border">製品ラインナップ</li>
+            <li class="header__navi-border"><a href="#">製品ラインナップ</a></li>
             <li class="header__navi-border"><a href="#">30日間無料体験版</a></li>
             <li class="header__navi-border"><a href="#">お客様サポート<span
-                  class="header__navi-support_icon"></span></span></a></li>
+                  class="header__navi-support_icon"></span></span></a>
+            </li>
             <li><a href="#">お知らせ<span></span></a></li>
             <li class="header__navi__btn">注文情報の確認</li>
             <li class="header__navi__btn"><span class="fa fa-check-square-o">カート</li>
@@ -66,33 +92,39 @@
         </nav>
       </div>
     </header>
+
     <main>
       <div class="contents">
         <section class="topbanner">
-          <div>
-            <h2><img src="images/jp_top_herobanner_father_n360.png" alt="他にはない安心を届ける。それがノートン。"></h2>
-            <div class="topbanner__text">
-              <div class="topbanner__text__icon">
-                <img src="images/jp_top_new_icon.png" alt="new">
-              </div>
-              <div class="topbanner__text__p_name">
-                <p>ノートン 360 デラックス <span>1年3台版</span></p>
-              </div>
-              <div class="topbanner__text__price">
-                <p>5,480<span>円(税抜)</span></p>
-              </div>
+          <h2><img src="images/jp_top_herobanner_father_n360.png" alt="他にはない安心を届ける。それがノートン。"></h2>
+          <div class="topbanner__text">
+            <div class="topbanner__text__icon">
+              <img src="images/jp_top_new_icon.png" alt="new">
             </div>
-            <div class="topbanner__text__day_price">
-              <p>1日あたり約15円</p>
+            <div class="topbanner__text__p_name">
+              <p>ノートン 360 デラックス <span>1年3台版</span></p>
             </div>
-            <div class="topbanner__text__button">
-              <p><span class="fa fa-check-square-o"></span><a href="#">カートに入れる</a></p>
+            <div class="topbanner__text__price">
+              <p>5,480<span>円(税抜)</span></p>
             </div>
+          </div>
+          <div class="topbanner__text__day_price">
+            <p>1日あたり約15円</p>
+          </div>
+          <div class="topbanner__text__button">
+            <p><span class="fa fa-check-square-o"></span><a href="#">カートに入れる</a></p>
           </div>
           <div class="topbanner__link">
             <figure><img src="images/nn360_main_banner.png" alt="ノートンバナー"></figure>
           </div>
         </section>
+        <section class="topbanner-sp">
+          <h2><img src="images/jp_top_sp_herobanner.png" alt="他にはない安心を届ける。それがノートン。"></h2>
+          <div class="topbanner-sp__button">
+            <a href="#"></a>
+          </div>
+        </section>
+
         <section class="advertisement">
           <div id="linebox" class="advertisement__line">
             <img src="images/line_pc.jpg" alt="Line宣伝">
@@ -102,7 +134,8 @@
             フィードバック
           </div>
         </section>
-        <section class=" package-list">
+
+        <section class="package-list">
           <div class="package-list__table">
             <div class="package-list__table__top">
               <div class="package-list__table__top__th"></div>
@@ -131,8 +164,8 @@
                   マルチデバイス 5台モデル</span>
               </div>
             </div>
-            <div class="package-list__table__Adjustment">
-            </div>
+            <!-- <div class="package-list__table__Adjustment">
+            </div> -->
             <div class="package-list__table__tr">
               <div class="package-list__table__tr__td--title">利用可能台数</div>
               <div class="package-list__table__tr__td--space"></div>
@@ -153,28 +186,29 @@
               <div class="package-list__table__tr__td--title">対応OS</div>
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td">
-                <img src="/images/icon_win10.png" alt="Windows 10">
-                <img src="/images/icon_mac.png" alt="Mac">
+                <img src="images/icon_win10.png" alt="Windows 10">
+                <img src="images/icon_mac.png" alt="Mac">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/icon_win10.png" alt="Windows 10">
-                <img src="/images/icon_mac.png" alt="Mac">
-                <img src="/images/icon_android.png" alt="Android">
-                <img src="/images/icon_ios.png" alt="iOS">
+                <img src="images/icon_win10.png" alt="Windows 10">
+                <img src="images/icon_mac.png" alt="Mac">
+                <img src="images/icon_android.png" alt="Android">
+                <img src="images/icon_ios.png" alt="iOS">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/icon_win10.png" alt="Windows 10">
-                <img src="/images/icon_mac.png" alt="Mac">
-                <img src="/images/icon_android.png" alt="Android">
-                <img src="/images/icon_ios.png" alt="iOS">
+                <img src="images/icon_win10.png" alt="Windows 10">
+                <img src="images/icon_mac.png" alt="Mac">
+                <img src="images/icon_android.png" alt="Android">
+                <img src="images/icon_ios.png" alt="iOS">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/icon_win10.png" alt="Windows 10">
-                <img src="/images/icon_mac.png" alt="Mac">
-                <img src="/images/icon_android.png" alt="Android">
-                <img src="/images/icon_ios.png" alt="iOS">
+                <img src="images/icon_win10.png" alt="Windows 10">
+                <img src="images/icon_mac.png" alt="Mac">
+                <img src="images/icon_android.png" alt="Android">
+                <img src="images/icon_ios.png" alt="iOS">
               </div>
             </div>
+
             <div class="package-list__table__tr">
               <div class="package-list__table__tr__td--title">1年版</div>
               <div class="package-list__table__tr__td--space"></div>
@@ -272,10 +306,13 @@
                 </div>
               </div>
               <div class="package-list__table__tr__td--space"></div>
-              <div class="package-list__table__tr__td package-list__table__tr__td--non">-<p>(332円<span>※1</span>)</p>
+              <div
+                class="package-list__table__tr__td package-list__table__tr__td--non package-list__table__tr__td--non--kome_mark">
+                -
+                <p>(332円<span>※1</span>)</p>
               </div>
               <div
-                class="package-list__table__tr__td package-list__table__tr__td--td2 package-list__table__tr__td--non">
+                class="package-list__table__tr__td package-list__table__tr__td--td2 package-list__table__tr__td--non package-list__table__tr__td--non--kome_mark">
                 -<p>(357円<span>※1</span>)</p>
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
@@ -323,16 +360,16 @@
               </div>
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
             <div class="package-list__table__tr">
@@ -359,16 +396,16 @@
               </div>
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
             <div class="package-list__table__tr">
@@ -377,16 +414,16 @@
               </div>
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
             <div class="package-list__table__tr">
@@ -395,16 +432,16 @@
               </div>
               <div class="package-list__table__tr__td--space"></div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
             <div class="package-list__table__tr">
@@ -412,17 +449,18 @@
                 <P>お子様のネット利用管理<span>※4</span></P>
               </div>
               <div class="package-list__table__tr__td--space"></div>
-              <div class="package-list__table__tr__td">
+              <div class="package-list__table__tr__td package-list__table__tr__td--blank">
 
               </div>
-              <div class="package-list__table__tr__td package-list__table__tr__td--td2">
+              <div
+                class="package-list__table__tr__td package-list__table__tr__td--td2 package-list__table__tr__td--blank">
 
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
             <div class="package-list__table__tr package-list__table__tr--header">
@@ -454,189 +492,573 @@
               <div class="package-list__table__tr__td">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--td2">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td package-list__table__tr__td--dx">
-                <img src="/images/three_fnc_check_red.png" alt="チェック">
+                <img src="images/three_fnc_check_red.png" alt="チェック">
               </div>
               <div class="package-list__table__tr__td">
-                <img src="/images/three_fnc_check_orange.png" alt="チェック">
+                <img src="images/three_fnc_check_orange.png" alt="チェック">
               </div>
             </div>
           </div>
-          <div class="package-list__Note">
-            <ul>
-              <li>
-                <p><span>※1 </span>当該製品の最長年数製品をご購入後、最大利用台数のデバイスにインストールしてご利用いただいた場合（税抜価格で計算、小数点第一位を四捨五入）</p>
-              </li>
-              <li>
-                <p><span>※2 </span>ノートン 自動オンラインバックアップ機能は Windows でのみ利用できます。ご使用のデバイスがインターネットプランまたはデータプランに加入しており、電源がオ
-                </p>
-                <p><span class="package-list__Note--space"></span>ンになっている必要があります。</p>
-              </li>
-              <li>
-                <p><span>※3 </span>ノートン プロテクション プロミス: ウイルス駆除サービス（ノートン プロテクション プロミス）を使用するには、有効なサブスクリプションを保有している必要があり
-                </p>
-                <p><span class="package-list__Note--space"></span>ます。ノートン スモール
-                  ビジネスを使用していない場合は、該当するサブスクリプションをシマンテックから直接購入、更新、アップグレードするか、シマンテックの</p>
-                <p><span
-                    class="package-list__Note--space"></span>自動延長サービスに登録する必要があります。ノートンの専門スタッフがお客様のデバイスからウイルスを駆除できなかった場合は、対象になるノートン製品の有効期間
-                </p>
-                <p><span class="package-list__Note--space"></span>に対して実際に支払った金額について、返金を請求することができます。バンドル（別のノートンまたは
-                  LifeLock
-                  製品が付属する有効なサブスクリプション）を購入し</p>
-                <p><span
-                    class="package-list__Note--space"></span>た場合、返金額は、対象になるサブスクリプションにおけるメーカー希望小売価格（MSRP）を上限とし、バンドルの合計購入金額を超えることはありません。購入した
-                </p>
-                <p><span class="package-list__Note--space"></span>バンドルに含まれるノートンの有効なサブスクリプションに、ノートンおよび LifeLock
-                  以外の製品が含まれている場合、返金額は、そのサブスクリプションにおけるメ</p>
-                <p><span
-                    class="package-list__Note--space"></span>ーカー希望小売価格を上限とし、バンドルの合計購入金額を超えることはありません。返金額は、適用された割引や返金、送料、手数料、該当する税金を差し引いた金額
-                </p>
-                <p><span
-                    class="package-list__Note--space"></span>です。返金規定のある一部の国と地域を除き、送料、手数料、およびそれらに適用される税額は、お客様の負担になります。返金保証は、ウイルスに感染したことによる
-                </p>
-                <p><span class="package-list__Note--space"></span>損害には適用されません。サブスクリプションの契約方法などについて詳しくは、<a
-                    href="#">Norton.com/guarantee<span></span>
-                  </a>を参照してください。</p>
-              <li>
-                <p><span>※4 </span>ノートン ファミリーの保護者機能は Mac ではサポートされていません。</p>
-              </li>
-              <li>
-                <p><span>※5 </span>ノートン セーフカム機能は Windows でのみ利用できます。また、インターネット接続が必要となります。</p>
-              </li>
-            </ul>
-          </div>
         </section>
-        <section class="relief">
-          <div class='relief__title'>
-            <h2>他にはない安心を届ける。それがノートン。</h2>
+
+        <section class="package-list-sp">
+          <div class="package-list-sp__swich">
+            <span id="cursor" class="package-list-sp__swich__cursor"></span>
+            <span id="left_btn"
+              class="package-list-sp__swich__left-icon package-list-sp__swich__icon--none fa fa-angle-left"></i></span>
+            <span id="bar1" class="package-list-sp__swich__bar"></span>
+            <span id="bar2" class="package-list-sp__swich__bar"></span>
+            <span id="bar3" class="package-list-sp__swich__bar"></span>
+            <span id="bar4" class="package-list-sp__swich__bar package-list-sp__swich__bar--none"></span>
+            <span id="right_btn"
+              class="package-list-sp__swich__left-icon package-list-sp__swich__icon package-list-sp__swich__right-icon fa fa-angle-right"></span>
           </div>
-          <div class='relief__list'>
-            <dl>
-              <figure class="pc"><img src="/images/nt01.jpg" alt="セキュリティ専門家チーム"></figure>
-              <div class='relief__list__clumn'>
-                <dt><span>世界最大規模</span>のセキュリティ専門家チーム</dt>
-                <figure class="sp"><img src="/images/nt01s.jpg" alt="セキュリティ専門家チーム"></figure>
-                <dd>
-                  <p>民間で世界最大規模のセキュリティ専門家チームが、脅威の分析や技術研究を</p>
-                  <p>進めています。</p>
-                </dd>
+          <div class="package-list-sp__table">
+
+            <div id="left_col" class="package-list-sp__table__col">
+              <div class="package-list-sp__table__col__title">アンチウイルスプラス</div>
+              <div class="package-list-sp__table__col__subtitle"><br>Windows・Mac専用</div>
+              <div class="package-list-sp__table__col__product">
+                <img src="images/jp_top_pkg_nav.png" alt="アンチウイルスプラス">
+                <div class="package-list-sp__table__col__product__details">
+                  <p>詳細</p>
+                  <span class="package-list-sp__table__col__product__icon"></span>
+                </div>
+
+                <div class="package-list-sp__table__col__product__period">1年版</div>
+                <div class="package-list-sp__table__col__product__price">3,980<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
+
+                <div class="package-list-sp__table__col__product__none">
+                  -
+                </div>
+                <div class="package-list-sp__table__col__product__none">
+                  -
+                </div>
               </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt02.jpg" alt="世界を解析"></figure>
-              <div class='relief__list__clumn'>
-                <dt>世界のビッグデータを<span>AI技術で解析</span></dt>
-                <figure class="sp"><img src="/images/nt02s.jpg" alt="世界を解析"></figure>
-                <dd>
-                  <p>150カ国4,200万の攻撃センサーから収集した脅威に関するビッグデータをAI</p>
-                  <p>で脅威を監視しています。</p>
-                </dd>
+            </div>
+
+            <div class="package-list-sp__table__col">
+              <div class="package-list-sp__table__col__title">スタンダード</div>
+              <div class="package-list-sp__table__col__subtitle">お求めやすいエントリーモデル(1台)</div>
+              <div class="package-list-sp__table__col__product">
+                <img src="images/jp_top_pkg_std.png" alt="スタンダードパッケージ">
+                <div class="package-list-sp__table__col__product__details">
+                  <p>詳細</p>
+                  <span class="package-list-sp__table__col__product__icon"></span>
+                </div>
+
+                <div class="package-list-sp__table__col__product__period">1年版</div>
+                <div class="package-list-sp__table__col__product__price">4,280<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
+
+                <div class="package-list-sp__table__col__product__none">
+                  -
+                </div>
+                <div class="package-list-sp__table__col__product__none">
+                  -
+                </div>
               </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt03.jpg" alt="世界を監視"></figure>
-              <div class='relief__list__clumn'>
-                <dt><span>全世界を監視。</span>24時間365日体制で対応。</dt>
-                <figure class="sp"><img src="/images/nt03s.jpg" alt="世界を監視"></figure>
-                <dd>
-                  <p>東京を含む世界9ヶ所の研究所が途切れることなく連携し、24時間365日体制</p>
-                  <p>で脅威を監視しています。</p>
-                </dd>
+            </div>
+
+            <div class="package-list-sp__table__col package-list-sp__table__col">
+              <div class="package-list-sp__table__col__title package-list-sp__table__col__title--dx">デラックス</div>
+              <div class="package-list-sp__table__col__subtitle package-list-sp__table__col__subtitle--dx">
+                おすすめ！これ1本で安心。マルチデバイス(3台)モデル</div>
+              <div class="package-list-sp__table__col__product package-list-sp__table__col__product--dx">
+                <img src="images/jp_top_pkg_dlx.png" alt="プレミアムパッケージ">
+                <div class="package-list-sp__table__col__product__details">
+                  <p>詳細</p>
+                  <span class="package-list-sp__table__col__product__icon"></span>
+                </div>
+
+                <div class="package-list-sp__table__col__product__period">1年版</div>
+                <div class="package-list-sp__table__col__product__price">5,480<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
+                <div class="package-list-sp__table__col__product__year-edition">
+                  <div class="package-list-sp__table__col__product__period">2年版</div>
+                  <div class="package-list-sp__table__col__product__price">11,880<span>円</span></div>
+                  <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                  <div class="package-list-sp__table__col__product__button">
+                    <span class="fa fa-check-square-o"></span>カートに入れる
+                  </div>
+                </div>
+                <div class="package-list-sp__table__col__product__period">3年版</div>
+                <div class="package-list-sp__table__col__product__price">13,080<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
               </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt04.jpg" alt="風船"></figure>
-              <div class='relief__list__clumn'>
-                <dt>11年連続！<span>軽さNo.1</span></dt>
-                <figure class="sp"><img src="/images/nt04s.jpg" alt="風船"></figure>
-                <dd>
-                  <p>権威ある第三者機関のテスト※で11年連続軽さNo.1を受賞しています。</p>
-                  <p class="relief__list__clumn--kome1">※Passmark Software, Antivirus, Internet Security and Total
-                    Security Products Performance
-                    Benchmarking (Sep 2008 - F</p>
-                  <p class="relief__list__clumn--kome2">eb
-                    2009), Consumer Antivirus Performance Benchmarks (Sep 2010), Consumer Security Products Performance
-                    Bench</p>
-                  <p class="relief__list__clumn--kome2">marks (Feb 2011
-                    - Nov 2017) 軽さとシステム影響度に関する14〜23項目 (ブラウズ時間、インストール時間、ファイルダウ</p>
-                  <p class="relief__list__clumn--kome2">ンロード時間等) のテスト結果の総合評価</p>
-                </dd>
+            </div>
+
+            <div id="right_col" class="package-list-sp__table__col package-list-sp__table__col--none">
+              <div class="package-list-sp__table__col__title">プレミアム</div>
+              <div class="package-list-sp__table__col__subtitle package-list-sp__table__col__subtitle">
+                マルチデバイス(5台)ファミリーモデル</div>
+              <div class="package-list-sp__table__col__product package-list-sp__table__col__product">
+                <img src="images/jp_top_pkg_pre.png" alt="プレミアムパッケージ">
+                <div class="package-list-sp__table__col__product__details">
+                  <p>詳細</p>
+                  <span class="package-list-sp__table__col__product__icon"></span>
+                </div>
+
+                <div class="package-list-sp__table__col__product__period">1年版</div>
+                <div class="package-list-sp__table__col__product__price">6,480<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
+                <div class="package-list-sp__table__col__product__year-edition">
+                  <div class="package-list-sp__table__col__product__period">2年版</div>
+                  <div class="package-list-sp__table__col__product__price">14,280<span>円</span></div>
+                  <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                  <div class="package-list-sp__table__col__product__button">
+                    <span class="fa fa-check-square-o"></span>カートに入れる
+                  </div>
+                </div>
+                <div class="package-list-sp__table__col__product__period">3年版</div>
+                <div class="package-list-sp__table__col__product__price">14,480<span>円</span></div>
+                <div class="package-list-sp__table__col__product__tax">(税抜)</div>
+                <div class="package-list-sp__table__col__product__button">
+                  <span class="fa fa-check-square-o"></span>カートに入れる
+                </div>
               </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt05.jpg" alt="トロフィー"></figure>
-              <div class='relief__list__clumn'>
-                <dt>防御力評価<span>「AAA」</span>を<span>18回連続受賞</span></dt>
-                <figure class="sp"><img src="/images/nt05s.jpg" alt="トロフィー"></figure>
-                <dd>
-                  <p>防御力に関する第三者機関※の調査で、最高評価の「AAA」を18回連続で獲得</p>
-                  <p>しています。</p>
-                  <p class="relief__list__clumn--kome1">※18回のうち、9回は Dennis Technology Labs のテストです。 SE Labs は Dennis
-                    Technology Labs のテスト手法を継続して実</p>
-                  <p class="relief__list__clumn--kome2">施する第三者調査機関です。SE Labs CONSUMER REPORT (January - March
-                    2016〜January - March 2018), Dennis Techn</p>
-                  <p class="relief__list__clumn--kome2">ology Labs Home Anti-Virus Protection (October - December
-                    2013〜October - December 2015)</p>
-                </dd>
-              </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt06.jpg" alt="No.1"></figure>
-              <div class='relief__list__clumn'>
-                <dt><span>世界売上シェアNo.1</span></dt>
-                <figure class="sp"><img src="/images/nt06s.jpg" alt="No.1"></figure>
-                <dd>
-                  <p>世界売上シェアNo.1<sup>※</sup>を獲得しています。</p>
-                  <p class="relief__list__clumn--kome1">※出典：Gartner Market Share: All Software Markets, Worldwide, 2018,
-                    Terilyn Palanca et al. (2019年4月8日, 家庭向けセ</p>
-                  <p class="relief__list__clumn--kome2">キュリティソフト：2018年売上金額ベース)</p>
-                </dd>
-              </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt07.jpg" alt="返金"></figure>
-              <div class='relief__list__clumn'>
-                <dt>自信があるから<span>60日間返金保証</span></dt>
-                <figure class="sp"><img src="/images/nt07s.jpg" alt="返金"></figure>
-                <dd>
-                  <p>世理由に関わらず60日間返金保証<sup>※</sup>をしています。</p>
-                  <p class="relief__list__clumn--kome1">※詳しくは<a href="#">サポートページ</a>をご覧ください。</p>
-                </dd>
-              </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt08.jpg" alt="オペレーター"></figure>
-              <div class='relief__list__clumn'>
-                <dt><span>安心</span>の<span>サポート</span></dt>
-                <figure class="sp"><img src="/images/nt08s.jpg" alt="オペレーター"></figure>
-                <dd>
-                  <p>24時間チャットでサポートしています。</p>
-                  <p class="relief__list__clumn--kome1">※電話サポートも実施（土日祝日を除く 月～金/10時～19時）</p>
-                </dd>
-              </div>
-            </dl>
-            <dl>
-              <figure class="pc"><img src="/images/nt09.jpg" alt="デバイス"></figure>
-              <div class='relief__list__clumn'>
-                <dt>全てのデバイスを<span>これ一本で守る</span></dt>
-                <figure class="sp"><img src="/images/nt09s.jpg" alt="デバイス"></figure>
-                <dd>
-                  <p>パソコンもスマホもタブレットもこれ一本で守ります。</p>
-                </dd>
-              </div>
-            </dl>
+            </div>
+
           </div>
-          <div class="relief__button">
-            <span class="fa fa-check-square-o"></span><a href="#">ご購入はこちら</a>
+          <div class="package-list-sp__table__col__title2">
+            <div>(1台1か月あたり目安)</div>
           </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_2" class="package-list-sp__table__row__col package-list-sp__table__row__col__month">
+              (332円<span>※1</span>)
+            </div>
+
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__month">
+              (357円<span>※1</span>)
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__month">
+              (121円<span>※1</span>)
+            </div>
+            <div id="right_col_2"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--none  package-list-sp__table__row__col--dx package-list-sp__table__row__col__month">
+              (80円<span>※1</span>)
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>利用可能台数</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_3" class="package-list-sp__table__row__col package-list-sp__table__row__col__unit">
+              1台
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__unit">
+              1台
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__unit package-list-sp__table__row__col--dx">
+              3台
+            </div>
+            <div id="right_col_3"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--none package-list-sp__table__row__col__unit package-list-sp__table__row__col--dx">
+              5台
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>対応OS</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_4" class="package-list-sp__table__row__col package-list-sp__table__row__col__os">
+              <img src="images/jp_top_osicon_win_mac.png" alt="os">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__os">
+              <img src="images/jp_top_osicon_all.png" alt="os">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__os">
+              <img src="images/jp_top_osicon_all.png" alt="os">
+            </div>
+            <div id="right_col_4"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--none package-list-sp__table__row__col__os">
+              <img src="images/jp_top_osicon_all.png" alt="os">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>ランサムウェア/ウイルス/スパイウェア対策</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_5" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_5"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--none package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>自動オンラインバックアップ<span>※2</span></div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_6" class="package-list-sp__table__row__col package-list-sp__table__row__col__unit">
+              2GB
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__unit">
+              10GB
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__unit package-list-sp__table__row__col--dx">
+              25GB
+            </div>
+            <div id="right_col_6"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__unit package-list-sp__table__row__col--none package-list-sp__table__row__col--dx">
+              50GB
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>不正アクセスの遮断</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_7" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_7"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--none package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>パスワードの安全管理（パスワード マネージャー）</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_8" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_8"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__check package-list-sp__table__row__col--none">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2 ">
+            <div>ウイルス駆除サービス （ノートン プロテクション プロミス）<span>※3</span></div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_9" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_9"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__check package-list-sp__table__row__col--none">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>お子様のネット利用管理<span>※4</span></div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_10" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/jp_top_product_check_none.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/jp_top_product_check_none.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_10"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__check package-list-sp__table__row__col--none">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>Wi-Fi 送受信データの暗号化 （ノートン セキュア VPN）</div>
+          </div>
+
+          <div class="package-list-sp__table__row">
+            <div id="left_col_11" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/jp_top_product_check_none.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__unit">
+              1台
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__unit">
+              3台まで
+            </div>
+            <div id="right_col_11"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__unit package-list-sp__table__row__col--none">
+              5台まで
+            </div>
+          </div>
+
+          <div class="package-list-sp__table__col__title2">
+            <div>Web カメラの乗っ取り防止（セーフカム）<span>※5</span></div>
+          </div>
+          <div class="package-list-sp__table__row">
+            <div id="left_col_12" class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/jp_top_product_check_none.png" alt="check">
+            </div>
+            <div class="package-list-sp__table__row__col package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+            <div
+              class="package-list-sp__table__row__col package-list-sp__table__row__col--dx package-list-sp__table__row__col__check">
+              <img src="images/three_fnc_check_red.png" alt="check">
+            </div>
+            <div id="right_col_12"
+              class="package-list-sp__table__row__col package-list-sp__table__row__col__check package-list-sp__table__row__col--none">
+              <img src="images/three_fnc_check_orange.png" alt="check">
+            </div>
+          </div>
+
+        </section>
+
+        <section class="Note">
+          <ul>
+            <li>
+              <p><span>※1 </span>
+                <span>
+                  当該製品の最長年数製品をご購入後、最大利用台数のデバイスにインストールしてご利用いただいた場合（税抜価格で計算、小数点第一位を四捨五入）
+                </span>
+              </p>
+            </li>
+
+            <li>
+              <p><span>※2 </span>
+                <span>
+                  ノートン 自動オンラインバックアップ機能はWindowsでのみ利用できます。ご使用のデバイスがインターネットプランまたはデータプランに加入しており、電源がオ
+                  ンになっている必要があります。
+                </span>
+
+              </p>
+              <p></p>
+            </li>
+            <li>
+              <p><span>※3 </span>
+                <span>ノートン プロテクション プロミス: ウイルス駆除サービス（ノートン プロテクション プロミス）を使用するには、有効なサブスクリプションを保有している必要があり
+                  ます。ノートン スモール
+                  ビジネスを使用していない場合は、該当するサブスクリプションをシマンテックから直接購入、更新、アップグレードするか、シマンテックの
+                  自動延長サービスに登録する必要があります。ノートンの専門スタッフがお客様のデバイスからウイルスを駆除できなかった場合は、対象になるノートン製品の有効期間
+                  に対して実際に支払った金額について、返金を請求することができます。バンドル（別のノートンまたは
+                  LifeLock
+                  製品が付属する有効なサブスクリプション）を購入し
+                  た場合、返金額は、対象になるサブスクリプションにおけるメーカー希望小売価格（MSRP）を上限とし、バンドルの合計購入金額を超えることはありません。購入した
+                  バンドルに含まれるノートンの有効なサブスクリプションに、ノートンおよび LifeLock
+                  以外の製品が含まれている場合、返金額は、そのサブスクリプションにおけるメ
+                  ーカー希望小売価格を上限とし、バンドルの合計購入金額を超えることはありません。返金額は、適用された割引や返金、送料、手数料、該当する税金を差し引いた金額
+                  です。返金規定のある一部の国と地域を除き、送料、手数料、およびそれらに適用される税額は、お客様の負担になります。返金保証は、ウイルスに感染したことによる
+                  損害には適用されません。サブスクリプションの契約方法などについて詳しくは、<a href="#">Norton.com/guarantee<span></span>
+                  </a>を参照してください。</span></p>
+            <li>
+              <p><span>※4 </span>
+                <span>ノートン ファミリーの保護者機能は Mac ではサポートされていません。</span></p>
+            </li>
+            <li>
+              <p><span>※5 </span>
+                <span>ノートン セーフカム機能は Windows でのみ利用できます。また、インターネット接続が必要となります。</span></p>
+            </li>
+          </ul>
+        </section>
+
+
+        <div class='relief__title'>
+          <h2>他にはない安心を届ける。それがノートン。</h2>
+        </div>
+        <div class='relief__list'>
+          <dl>
+            <figure class="pc"><img src="images/nt01.jpg" alt="セキュリティ専門家チーム"></figure>
+            <div class='relief__list__clumn'>
+              <dt><span>世界最大規模</span>の<span class="sp"><br /></span>セキュリティ専門家チーム</dt>
+              <figure class="sp"><img src="images/nt01s.jpg" alt="セキュリティ専門家チーム"></figure>
+              <dd>
+                <p>民間で世界最大規模のセキュリティ専門家チームが、脅威の分析や技術研究を進めています。</p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt02.jpg" alt="世界を解析"></figure>
+            <div class='relief__list__clumn'>
+              <dt>世界のビッグデータを<span class="sp"><br /></span><span>AI技術で解析</span></dt>
+              <figure class="sp"><img src="images/nt02s.jpg" alt="世界を解析"></figure>
+              <dd>
+                <p>150カ国4,200万の攻撃センサーから収集した脅威に関するビッグデータをAI技術
+                  で解析して製品に活かしています。</p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt03.jpg" alt="世界を監視"></figure>
+            <div class='relief__list__clumn'>
+              <dt><span>全世界を監視。</span><span class="sp"><br /></span>24時間365日体制で対応。</dt>
+              <figure class="sp"><img src="images/nt03s.jpg" alt="世界を監視"></figure>
+              <dd>
+                <p>東京を含む世界9ヶ所の研究所が途切れることなく連携し、24時間365日体制で脅威を監視しています。</p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class=" pc"><img src="images/nt04.jpg" alt="風船"></figure>
+            <div class='relief__list__clumn'>
+              <dt>11年連続！<span>軽さNo.1</span></dt>
+              <figure class="sp"><img src="images/nt04s.jpg" alt="風船"></figure>
+              <dd>
+                <p>権威ある第三者機関のテスト<sup>※</sup>で11年連続軽さNo.1を受賞しています。</p>
+                <p class="relief__list__clumn--kome1">
+                  <span class="relief__list__clumn--kome2">※</span>Passmark Software, Antivirus, Internet Security and
+                  Total
+                  Security Products Performance
+                  Benchmarking (Sep 2008 - Feb
+                  2009), Consumer Antivirus Performance Benchmarks (Sep 2010), Consumer
+                  Security Products Performance
+                  Bench
+                  marks (Feb 2011
+                  - Nov 2017) 軽さとシステム影響度に関する14〜23項目 (ブラウズ時間、インストール時間、ファイルダウ
+                  ンロード時間等) のテスト結果の総合評価</p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt05.jpg" alt="トロフィー"></figure>
+            <div class='relief__list__clumn'>
+              <dt>防御力評価<span>「AAA」</span>を<span>18回連続受賞</span></dt>
+              <figure class="sp"><img src="images/nt05s.jpg" alt="トロフィー"></figure>
+              <dd>
+                <p>防御力に関する第三者機関<sup>※</sup>の調査で、最高評価の「AAA」を18回連続で獲得しています。</p>
+                <p class="relief__list__clumn--kome1">
+                  <span class="relief__list__clumn--kome2">※</span>18回のうち、9回は Dennis Technology Labs
+                  のテストです。 SE Labs
+                  は Dennis
+                  Technology Labs のテスト手法を継続して実
+                  施する第三者調査機関です。SE Labs CONSUMER REPORT (January - March
+                  2016〜January - March 2018), Dennis Techn
+                  ology Labs Home Anti-Virus Protection (October - December
+                  2013〜October - December 2015)
+                </p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt06.jpg" alt="No.1"></figure>
+            <div class='relief__list__clumn'>
+              <dt><span>世界売上シェアNo.1</span></dt>
+              <figure class="sp"><img src="images/nt06s.jpg" alt="No.1"></figure>
+              <dd>
+                <p>世界売上シェアNo.1<sup>※</sup>を獲得しています。</p>
+                <p class="relief__list__clumn--kome1"><span class="relief__list__clumn--kome2">※</span>出典：Gartner Market
+                  Share: All Software
+                  Markets,
+                  Worldwide,
+                  2018,
+                  Terilyn Palanca et al. (2019年4月8日, 家庭向けセ
+                  キュリティソフト：2018年売上金額ベース)</p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt07.jpg" alt="返金"></figure>
+            <div class='relief__list__clumn'>
+              <dt>自信があるから<span><span class="sp"><br></span>60日間返金保証</span></dt>
+              <figure class="sp"><img src="images/nt07s.jpg" alt="返金"></figure>
+              <dd>
+                <p>世理由に関わらず60日間返金保証<sup>※</sup>をしています。</p>
+                <p class="relief__list__clumn--kome1">
+                  <span class="relief__list__clumn--kome2">※</span>詳しくは<a href="#">サポートページ</a>をご覧ください。
+                </p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt08.jpg" alt="オペレーター"></figure>
+            <div class='relief__list__clumn'>
+              <dt><span>安心</span>の<span>サポート</span></dt>
+              <figure class="sp"><img src="images/nt08s.jpg" alt="オペレーター"></figure>
+              <dd>
+                <p>24時間チャットでサポートしています。</p>
+                <p class="relief__list__clumn--kome1">
+                  <span class="relief__list__clumn--kome2">※</span>電話サポートも実施（土日祝日を除く 月～金/10時～19時）
+                </p>
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <figure class="pc"><img src="images/nt09.jpg" alt="デバイス"></figure>
+            <div class='relief__list__clumn'>
+              <dt>全てのデバイスを<span><span class="sp"><br></span>これ一本で守る</span></dt>
+              <figure class="sp"><img src="images/nt09s.jpg" alt="デバイス"></figure>
+              <dd>
+                <p>パソコンもスマホもタブレットもこれ一本で守ります。</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <div class="relief__button">
+          <span class="fa fa-check-square-o"></span><a href="#">ご購入はこちら</a>
+        </div>
         </section>
         <section class="defense">
           <div class='defense__title'>
             <h2>ノートンだけの防御力。6つの保護層で強力ブロック！</h2>
           </div>
-          <figure class="defense__figure"><img src="/images/complement.jpg" alt=""></figure>
+          <figure class="defense__figure"><img src="images/complement.jpg" alt=""></figure>
           <div class="defense__button">
             <span class="fa fa-check-square-o"></span><a href="#">ご購入はこちら</a>
           </div>
@@ -651,15 +1073,18 @@
         <ul>
           <li><a href="#">利用規約</a>
           </li>
-          <li><a href="#">個人情報保護方針</li></a>
-          <li><a href="#">個人情報利用について</li></a>
-          <li><a href="#">特定商取引法に基づく表示</li></a>
+          <li><a href="#">個人情報保護方針</a></li>
+          <li><a href="#">個人情報利用について</a></li>
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+          <li class="sp"><a href="#">商標・登録商標について</a></li>
+          <li class="sp"><a href="#">お問い合わせ</a></li>
+          <li class="sp footer__navi__last"><a href="#">サイトマップ</a></li>
         </ul>
-        <p><a href="#">サイトマップ</a></p>
+        <p class="pc"><a href="#">サイトマップ</a></p>
       </div>
-      <a href="#">商標・登録商標について</a>
+      <a class="pc" href="#">商標・登録商標について</a>
       <div class="footer__logo">
-        <p class="footer__logo__description">Norton by Symantec ロゴは Norton LifeLock ロゴに変わりました。
+        <p class="footer__logo__description pc">Norton by Symantec ロゴは Norton LifeLock ロゴに変わりました。
           LifeLock™
           個人情報盗難保護サービスが利用できない国があります。</p>
         <div class="footer__logo__image">

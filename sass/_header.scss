@@ -1,24 +1,62 @@
 ﻿.header {
     display: flex;
-    margin-left: -59px;
+    margin-left: -110px;
     &__logo {
         width: 27%;
+        @include media(max-xs) {
+            width: 65%;
+            margin: -8px 0px;
+        }
         img {
+            width: 47%;
             max-width: 81%;
             height: auto;
-            margin-top: 12px;
-            margin-left: 110px;
+            margin-top: 18px;
+            margin-left: 72px;
             cursor: pointer;
+            @include media(max-l) {
+                margin-left: 53px;
+            }
+        }
+        @include media(max-l) {
+            margin-left: 22px;
         }
     }
+    &__navi-sp {
+        @include media(min-xs) {
+            display: none;
+        }
+        position: absolute;
+        top: 7px;
+        @include media(max-xs) {
+            right: 61px;
+        }
+        z-index: 300;
+        width: 75px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
     &__navi {
+        //SP
+        @include media(max-xs) {
+            display: none;
+        }
+
         margin-top: 24px;
-        margin-left: 1px;
+        margin-left: -9px;
+
+        @include media(max-l) {
+            margin-left: 0px;
+        }
 
         ul li {
             display: inline-block;
-            @include fontsize(13, $root_font_pc_size);
-            vertical-align: middle;
+            @include fontsize(12.2, $root_font_size);
+            @include media(max-l) {
+                @include fontsize(11, $root_font_size);
+            }
+            //vertical-align: middle;
             a:hover {
                 text-decoration: underline;
             }
@@ -27,6 +65,9 @@
         &-border {
             height: 18px;
             padding: 0 12px;
+            @include media(max-l) {
+                padding: 0 1px;
+            }
             padding-top: 4px;
             border-right: 1px solid $color_header_line;
         }
@@ -41,6 +82,10 @@
         &__btn {
             box-sizing: border-box;
             width: 129px;
+            @include media(max-l) {
+                width: 96px;
+            }
+
             height: 40px;
             margin-top: 1px;
             margin-left: 11px;
@@ -57,4 +102,115 @@
             }
         }
     }
+}
+/* --------------------------------
+     * ハンバーガーメニュー
+     * -------------------------------- */
+
+.global-nav {
+    position: fixed;
+    top: -32px;
+    right: -810px; /* これで隠れる */
+    z-index: 200;
+    width: 368px; /* スマホに収まるくらい */
+    height: 930px;
+    //padding: 17px 0 0px 16px;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+    text-align: left;
+    background-color: $color_main;
+    transition: all 0.6s;
+}
+.hamburger {
+    position: absolute;
+    top: -16px;
+    right: -61px;
+    z-index: 300;
+    width: 59px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.global-nav__list {
+    margin: 0;
+    margin-top: 122px;
+    padding: 0;
+    //padding: 103px 15px 9px 8px;
+    line-height: 31px;
+    list-style: none;
+}
+.global-nav__list-border {
+    padding: 10px 0;
+    border: 1px solid $color_header_button;
+    a {
+        margin-left: 30px;
+        color: $color_header_list_sp;
+    }
+}
+.global-nav__item {
+    padding: 0 14px;
+    text-align: center;
+}
+.global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+.global-nav__item a:hover {
+    background-color: #eee;
+}
+.hamburger__line {
+    position: absolute;
+    left: 11px;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 4px;
+}
+.hamburger__line--1 {
+    top: 14px;
+}
+.hamburger__line--2 {
+    top: 20px;
+    margin: 4px 0px;
+}
+.hamburger__line--3 {
+    top: 26px;
+    margin: 8px 0px;
+}
+.black-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.6s;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+    right: -31px;
+}
+.nav-open .black-bg {
+    visibility: visible;
+    opacity: 0.8;
+}
+.nav-open .hamburger__line--1 {
+    top: 27px;
+    transform: rotate(48deg);
+    transition: all 0.3s;
+}
+.nav-open .hamburger__line--2 {
+    left: 50%;
+    width: 0;
+}
+.nav-open .hamburger__line--3 {
+    top: 20px;
+    transform: rotate(-45deg);
+    transition: all 0.3s;
 }

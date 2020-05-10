@@ -1,9 +1,32 @@
 ﻿.topbanner {
+    position: relative;
     margin-top: 35px;
+    img {
+        max-width: 107%;
+        @include media(max-l) {
+            max-width: 100%;
+        }
+    }
+    @include media(max-xs) {
+        display: none;
+    }
+    .header__logo {
+        @include media(max-l) {
+        }
+        img {
+            background: url(../images/logo_norton_sp.jpg) left top/64px auto
+                no-repeat;
+        }
+    }
     &__text {
-        position: relative;
-        top: -152px;
-        left: 121px;
+        position: absolute;
+        top: 148px;
+        left: 154px;
+        @include media(max-l) {
+            top: 92px;
+            left: 97px;
+        }
+
         &__icon {
             position: absolute;
             left: 17px;
@@ -14,8 +37,10 @@
             left: -5px;
             width: 354px;
             font-weight: bold;
-            @include fontsize(19, $root_font_pc_size);
-
+            @include fontsize(19, $root_font_size);
+            @include media(max-l) {
+                @include fontsize(18, $root_font_size);
+            }
             span {
                 padding: 0 5px;
                 border: 1px solid #555555;
@@ -27,35 +52,45 @@
             left: -86px;
             width: 354px;
             font-weight: bold;
-            @include fontsize(30, $root_font_pc_size);
+            @include fontsize(30, $root_font_size);
             span {
-                @include fontsize(16, $root_font_pc_size);
+                @include fontsize(16, $root_font_size);
             }
         }
 
         &__day_price {
             position: relative;
             top: -54px;
-            left: 130px;
-            width: 162px;
+            left: 160px;
+            width: 170px;
             height: 34px;
             padding: 9px 11px 1px 11px;
             color: $color_strong_price;
             font-weight: bold;
-            @include fontsize(17, $root_font_pc_size);
             background: $color_main;
             border-radius: 20px;
-            @include fontsize(17, $root_font_pc_size);
+            @include fontsize(17, $root_font_size);
+            @include fontsize(17, $root_font_size);
+
+            @include media(max-l) {
+                top: -43px;
+                left: 106px;
+            }
         }
         &__button {
             position: relative;
             top: -126px;
             left: 333px;
-            width: 200px;
+            width: 20%;
             height: 73px;
-            padding: 29px 0px 0px 13px;
+            padding: 29px 0px 0px 2px;
+            background: transparent; /* 背景をリセット */
             background-color: $color_button;
+
             border-radius: 5px;
+            -ms-filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffffff',EndColorStr='#cc0000');
+            filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffffff',EndColorStr='#cc0000');
+
             .fa-check-square-o:before {
                 padding: 0 1px;
                 color: #fff;
@@ -64,15 +99,42 @@
             a {
                 color: $color_main;
                 font-weight: bold;
-                @include fontsize(16, $root_font_pc_size);
+                @include fontsize(16, $root_font_size);
             }
             &:hover {
                 opacity: 0.9;
                 filter: brightness(110%);
             }
+            @include media(max-l) {
+                top: -118px;
+                left: 286px;
+                //width: 150px;
+            }
         }
     }
     &__link {
         margin-top: -87px;
+    }
+}
+
+.topbanner-sp {
+    position: relative;
+    padding: 28px 0px;
+    @include media(min-xs) {
+        display: none;
+    }
+    img {
+        max-width: 103%;
+        height: auto;
+        margin-left: -2%;
+    }
+    &__button {
+        position: absolute;
+        bottom: 15%;
+        left: 60%;
+        width: 38%;
+        height: 17%;
+        margin: 0;
+        background: none;
     }
 }

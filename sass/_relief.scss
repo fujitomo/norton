@@ -6,7 +6,11 @@
         color: $color_main;
         text-align: left;
         background-color: $color_relief_title;
-        @include fontsize(34, $root_font_pc_size);
+        @include fontsize(34, $root_font_size);
+        @include media(max-xs) {
+            @include fontsize(24, $root_font_size);
+            padding: 23px 14px;
+        }
         border-radius: 5px;
         h2 {
             font-weight: normal;
@@ -16,33 +20,70 @@
         &__clumn {
             text-align: left;
             &--kome1 {
-                //SEO観点からkome1,kome2どちらも記述
-                @include fontsize(12, $root_font_pc_size);
+                @include fontsize(13, $root_font_size);
+                @include media(max-xxs) {
+                    @include fontsize(10, $root_font_size);
+                }
+                display: flex;
+
                 margin-top: 11px;
+                margin-left: -11px;
             }
             &--kome2 {
-                //SEO観点からkome1,kome2どちらも記述
-                @include fontsize(12, $root_font_pc_size);
+                @include fontsizeImp(12, $root_font_size);
                 padding-left: 12px;
             }
         }
         dl {
             display: flex;
-            margin: 53px 15px;
+            margin: 54px 7px;
+            @include media(max-xs) {
+                margin: 0 15px;
+            }
             dt {
                 margin: 36px 0px;
                 padding: 14px 20px;
+                padding: 6px 26px;
                 font-weight: bold;
                 border-bottom: 1px solid $color_relief_title;
-                @include fontsize(28, $root_font_pc_size);
+                @include media(max-xs) {
+                    padding: 6px 0px;
+                    line-height: 36px;
+                    text-align: center;
+                    border-bottom: 4px solid $color_relief_title;
+                    @include fontsize(20, $root_font_size);
+                    span {
+                        @include fontsize(35, $root_font_size);
+                    }
+                }
+                @include fontsize(25, $root_font_size);
+            }
+            @include media(max-xs) {
+                img {
+                    max-width: 100%;
+                }
             }
             span {
-                @include fontsize(40, $root_font_pc_size);
+                @include fontsize(40, $root_font_size);
+                @include media(max-xs) {
+                    @include fontsize(14, $root_font_size);
+                }
             }
             dd {
                 margin: -23px 0;
-                padding: 14px 22px;
-                @include fontsize(20, $root_font_pc_size);
+                padding: 16px 0px 0 17px;
+                line-height: 32px;
+                @include fontsize(20, $root_font_size);
+                @include media(max-xs) {
+                    margin: 32px 0;
+                    padding: 0 0 26px 0;
+                    @include fontsize(17.5, $root_font_size);
+                    border-bottom: 1px solid #ccc;
+                    sup {
+                        font-size: small;
+                        vertical-align: text-top;
+                    }
+                }
                 a {
                     color: $color_relief_support;
                     &:hover {
@@ -66,7 +107,11 @@
         padding: 24px 0px 0px 13px;
         background-color: $color_button;
         border-radius: 5px;
-        @include fontsize(28, $root_font_pc_size);
+        @include fontsize(28, $root_font_size);
+        @include media(max-xs) {
+            width: 100%;
+            @include fontsize(23, $root_font_size);
+        }
 
         .fa-check-square-o:before {
             padding: 0 1px;

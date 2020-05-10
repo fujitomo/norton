@@ -1,6 +1,7 @@
 //ルートフォントサイズ
-$root_font_pc_size: 15;
-$root_font_sp_size: 12;
+$root_font_size: 15;
+//$root_font_pc_size: 15;
+$root_font_sp_size: 20;
 
 $color_main: #ffffff;
 $color_side: #dddddd;
@@ -8,6 +9,7 @@ $color_strong_price: #ff0000;
 $color_header_line: #999999;
 $color_main_font: black;
 $color_button: #02740f;
+$color_none-click_button: #ccc;
 $color_header_button: #b5b5b5;
 $color_cell_td: #fff7d6;
 $color_cell_title: #eeeeee;
@@ -21,6 +23,11 @@ $color_defense_title: #0085c6;
 $color_footer_font: #555555;
 $color_footer_description_font: #999999;
 $color_linebox_font: #caf0c9;
+$color_spcell: #ff9b01;
+$color_spcell_line: #b5b5b5;
+$color_swich_bar: #fcc34b;
+$color_swich_none-bar: #fee7b7;
+$color_header_list_sp: #f15500;
 
 //fonts
 $font_body: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
