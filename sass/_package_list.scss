@@ -10,8 +10,13 @@
         &__top {
             //position: absolute;
             display: flex;
-            //width: 100%;
             background: url(../images/four_top_bg.jpg) no-repeat 0 0;
+            //width: 100%;
+            background-size: 96%;
+            @include media(max-l) {
+                height: 115px;
+                background-size: 98%;
+            }
             @include media(max-m) {
                 height: 115px;
                 background-size: 100%;
@@ -29,9 +34,12 @@
                 color: $color_main;
                 font-size: 16px;
                 font-size: 1.06667rem;
-                @include media(max-m) {
+                @include media(max-l) {
                     top: 38px;
-                    left: -13px;
+                    left: -28px;
+                    @include media(max-m) {
+                        left: -18px;
+                    }
                 }
                 @include fontsize(16, $root_font_size);
                 span {
@@ -69,6 +77,13 @@
                 vertical-align: middle;
                 background-color: $color_cell_td;
 
+                @include media(max-m) {
+                    width: 20%;
+                    img {
+                        width: 20%;
+                    }
+                }
+
                 &--title {
                     position: relative;
                     display: table-cell;
@@ -84,11 +99,11 @@
                 &--title2 {
                     display: table-cell;
                     width: 149px;
+                    vertical-align: middle;
+                    background-color: $color_cell_title;
                     @include media(max-m) {
                         width: 16%;
                     }
-                    vertical-align: middle;
-                    background-color: $color_cell_title;
                     p {
                         padding: 0 5px;
                         text-align: left;
@@ -112,6 +127,9 @@
                     background-color: $color_cell_dx;
                     border-right: 3.5px solid $color_cell_dxline;
                     border-left: 3.5px solid $color_cell_dxline;
+                    @include media(max-m) {
+                        width: 22.5%;
+                    }
                 }
 
                 &--link {
@@ -131,6 +149,9 @@
                     span {
                         color: $color_main_font;
                         @include fontsize(13, $root_font_size);
+                        @include media(min-xs) {
+                            @include fontsize(12, $root_font_size);
+                        }
                     }
                 }
                 &--tax-price {
@@ -218,19 +239,21 @@
                     font-weight: bold;
                     @include media(max-m) {
                         width: 16%;
-                        width: 149px;
+                        width: 143px;
                         margin: 0 auto;
                     }
-                }
-
-                &--blank {
-                    width: 20.7%;
                 }
             }
             &--header {
                 display: flex;
                 align-items: center;
-                width: 99.6%;
+                width: 95.6%;
+                @include media(max-m) {
+                    width: 100%;
+                }
+                @include media(max-l) {
+                    width: 97.5%;
+                }
                 height: 43px;
                 padding: 0 11px;
                 color: white;
@@ -272,7 +295,7 @@
 }
 
 .package-list-sp {
-    height: 2087px;
+    height: 100%;
     @include media(min-xs) {
         display: none;
     }

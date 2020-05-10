@@ -613,6 +613,14 @@ sup {
 .package-list__table__top {
   display: flex;
   background: url(../images/four_top_bg.jpg) no-repeat 0 0;
+  background-size: 96%;
+}
+
+@media only screen and (max-width: 1199px) {
+  .package-list__table__top {
+    height: 115px;
+    background-size: 98%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -640,10 +648,16 @@ sup {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .package-list__table__top__th {
     top: 38px;
-    left: -13px;
+    left: -28px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (max-width: 991px) {
+  .package-list__table__top__th {
+    left: -18px;
   }
 }
 
@@ -685,6 +699,15 @@ sup {
   width: 196px;
   vertical-align: middle;
   background-color: #fff7d6;
+}
+
+@media only screen and (max-width: 991px) {
+  .package-list__table__tr__td {
+    width: 20%;
+  }
+  .package-list__table__tr__td img {
+    width: 20%;
+  }
 }
 
 .package-list__table__tr__td--title {
@@ -745,6 +768,12 @@ sup {
   border-left: 3.5px solid #fd5200;
 }
 
+@media only screen and (max-width: 991px) {
+  .package-list__table__tr__td--dx {
+    width: 22.5%;
+  }
+}
+
 .package-list__table__tr__td--link {
   margin: 14px 0;
   text-decoration: underline;
@@ -771,6 +800,13 @@ sup {
   color: black;
   font-size: 13px;
   font-size: 0.86667rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .package-list__table__tr__td--price span {
+    font-size: 12px;
+    font-size: 0.8rem;
+  }
 }
 
 .package-list__table__tr__td--tax-price {
@@ -892,19 +928,15 @@ sup {
 @media only screen and (max-width: 991px) {
   .package-list__table__tr__td--bold {
     width: 16%;
-    width: 149px;
+    width: 143px;
     margin: 0 auto;
   }
-}
-
-.package-list__table__tr__td--blank {
-  width: 20.7%;
 }
 
 .package-list__table__tr--header {
   display: flex;
   align-items: center;
-  width: 99.6%;
+  width: 95.6%;
   height: 43px;
   padding: 0 11px;
   color: white;
@@ -912,6 +944,18 @@ sup {
   text-align: left;
   background-color: #666666;
   background-color: #666666;
+}
+
+@media only screen and (max-width: 991px) {
+  .package-list__table__tr--header {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .package-list__table__tr--header {
+    width: 97.5%;
+  }
 }
 
 .package-list__Note {
@@ -951,7 +995,7 @@ sup {
 }
 
 .package-list-sp {
-  height: 2087px;
+  height: 100%;
 }
 
 @media only screen and (min-width: 576px) {
@@ -1583,8 +1627,6 @@ sup {
 }
 
 .footer {
-  height: 138px;
-  margin: 24px 0;
   padding: 0 39px;
   text-align: left;
 }
