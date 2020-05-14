@@ -103,6 +103,8 @@ sup {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: -110px;
 }
@@ -207,6 +209,23 @@ sup {
   }
 }
 
+.header__navi-border--cs:after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  background-image: url(../images/icon_newwin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__navi-border--cart:before {
+  content: "\f07a";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
 .header__navi-support_icon {
   margin: 0 0 0 5px;
   padding-right: 13px;
@@ -216,7 +235,8 @@ sup {
 }
 
 .header__navi__btn {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 129px;
   height: 40px;
   margin-top: 1px;
@@ -259,6 +279,8 @@ sup {
   /* メニューが多くなったらスクロールできるように */
   text-align: left;
   background-color: #ffffff;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
 }
 
@@ -342,6 +364,8 @@ sup {
   visibility: hidden;
   cursor: pointer;
   opacity: 0;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
 }
 
@@ -357,7 +381,11 @@ sup {
 
 .nav-open .hamburger__line--1 {
   top: 27px;
-  transform: rotate(48deg);
+  -webkit-transform: rotate(48deg);
+      -ms-transform: rotate(48deg);
+          transform: rotate(48deg);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -368,7 +396,11 @@ sup {
 
 .nav-open .hamburger__line--3 {
   top: 20px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -498,7 +530,8 @@ sup {
 
 .topbanner__text__button:hover {
   opacity: 0.9;
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .topbanner__link {
@@ -532,52 +565,6 @@ sup {
   background: none;
 }
 
-.advertisement__line {
-  position: fixed;
-  top: 190px;
-  right: -25px;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 1453px) {
-  .advertisement__line {
-    display: none;
-  }
-}
-
-.advertisement__line img:hover {
-  opacity: 0.6;
-  filter: brightness(110%);
-}
-
-.advertisement__line span {
-  position: relative;
-  top: -161px;
-  left: -30px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin: 0 auto;
-  padding-top: 3px;
-  font-weight: bold;
-  background: #caf0c9;
-  font-size: 20px;
-  font-size: 1.33333rem;
-}
-
-.advertisement__feedback {
-  position: fixed;
-  top: 395px;
-  right: -48px;
-  width: 130px;
-  height: 35px;
-  margin: auto;
-  padding-top: 13px;
-  background: #d2d2d2;
-  -webkit-transform: rotate(90deg);
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 576px) {
   .package-list {
     display: none;
@@ -595,6 +582,8 @@ sup {
 }
 
 .package-list__table__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: url(../images/four_top_bg.jpg) no-repeat 0 0;
   background-size: 96%;
@@ -805,7 +794,8 @@ sup {
 }
 
 .package-list__table__tr__td--button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 171px;
   height: 42px;
   margin: 14px 0px;
@@ -824,7 +814,8 @@ sup {
 
 .package-list__table__tr__td--button:hover {
   opacity: 0.9;
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 @media only screen and (max-width: 991px) {
@@ -859,7 +850,8 @@ sup {
 
 .package-list__table__tr__td--button-link:hover {
   opacity: 0.6;
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .package-list__table__tr__td--non {
@@ -918,8 +910,12 @@ sup {
 }
 
 .package-list__table__tr--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 95.6%;
   height: 43px;
   padding: 0 11px;
@@ -991,8 +987,12 @@ sup {
 .package-list-sp__swich {
   position: relative;
   top: -44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   margin: 31px auto 9px;
 }
@@ -1059,12 +1059,16 @@ sup {
 }
 
 .package-list-sp__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: -34px auto 0px;
 }
 
 .package-list-sp__table__col {
-  justify-content: ﬂex-end;
+  -webkit-box-pack: ﬂex-end;
+      -ms-flex-pack: ﬂex-end;
+          justify-content: ﬂex-end;
   width: 34%;
   background: #fff7d6;
   border: 1px solid #b5b5b5;
@@ -1089,9 +1093,15 @@ sup {
   font-weight: bold;
   line-height: 18px;
   background: #ff9b01;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
   font-size: 0.8rem;
 }
@@ -1107,9 +1117,15 @@ sup {
   padding: 0 3px;
   color: #eeeeee;
   background: #ff9b01;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__col__subtitle--dx {
@@ -1125,6 +1141,8 @@ sup {
 }
 
 .package-list-sp__table__col__product__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 53px;
   margin: 8px auto;
@@ -1189,9 +1207,15 @@ sup {
 .package-list-sp__table__col__product__none {
   height: 147px;
   padding: 19px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__col__product__year-edition {
@@ -1216,14 +1240,24 @@ sup {
 }
 
 .package-list-sp__table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .package-list-sp__table__row__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: ﬂex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: ﬂex-end;
+      -ms-flex-pack: ﬂex-end;
+          justify-content: ﬂex-end;
   width: 34%;
   height: 100px;
   background: #fff7d6;
@@ -1240,9 +1274,15 @@ sup {
   font-size: 10px;
   font-size: 0.66667rem;
   height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col__month span {
@@ -1255,9 +1295,15 @@ sup {
   font-size: 1.33333rem;
   height: 76px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col__os {
@@ -1265,25 +1311,43 @@ sup {
   font-size: 1.33333rem;
   height: 107px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col__check {
   height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col__month {
   font-size: 10px;
   font-size: 0.66667rem;
   height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col__month span {
@@ -1296,9 +1360,15 @@ sup {
   font-size: 1.33333rem;
   height: 75px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .package-list-sp__table__row__col--none {
@@ -1310,11 +1380,22 @@ sup {
   font-size: 1.33333rem;
   height: 175px;
   height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+/*
+** mediaクエリを何度も記述しているので、1箇所にまとめる。
+** 細かくたくさんmediaクエリを記述すると、（書いている最中は直感的で書きやすいが、）メンテナンス性が悪くなる。
+** 例↓
+--------------------------------------------------*/
 .relief {
   margin: 33px auto;
 }
@@ -1349,6 +1430,8 @@ sup {
 .relief__list__clumn--kome1 {
   font-size: 13px;
   font-size: 0.86667rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 11px;
   margin-left: -11px;
@@ -1368,6 +1451,8 @@ sup {
 }
 
 .relief__list dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 54px 7px;
 }
@@ -1492,217 +1577,7 @@ sup {
 
 .relief__button a:hover {
   opacity: 0.9;
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
-
-.defense {
-  margin: 62px auto;
-}
-
-@media only screen and (max-width: 576px) {
-  .defense {
-    display: none;
-  }
-}
-
-.defense__title {
-  width: 100%;
-  padding: 23px 20px;
-  color: #ffffff;
-  text-align: left;
-  background-color: #0085c6;
-  border-radius: 5px;
-  font-size: 34px;
-  font-size: 2.26667rem;
-}
-
-.defense__title h2 {
-  font-weight: normal;
-}
-
-.defense__figure img {
-  max-width: 100%;
-}
-
-.defense__button {
-  width: 600px;
-  height: 73px;
-  margin: 40px auto;
-  padding: 24px 0px 0px 13px;
-  background-color: #02740f;
-  border-radius: 5px;
-  font-size: 28px;
-  font-size: 1.86667rem;
-}
-
-.defense__button .fa-check-square-o:before {
-  padding: 0 1px;
-  color: #fff;
-  content: '\f07a';
-  /*アイコンの種類*/
-}
-
-.defense__button a {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.defense__button:hover {
-  opacity: 0.9;
-  filter: brightness(110%);
-}
-
-.Note {
-  padding-left: 0px;
-}
-
-@media only screen and (max-width: 360px) {
-  .Note {
-    margin: 100 px 0;
-  }
-}
-
-.Note ul {
-  margin-bottom: 59px;
-}
-
-.Note ul li {
-  margin: 12px 0;
-  text-align: left;
-  list-style: none;
-}
-
-.Note ul li p {
-  font-size: 12px;
-  font-size: 0.8rem;
-  display: flex;
-  line-height: 15px;
-}
-
-@media only screen and (max-width: 576px) {
-  .Note ul li p {
-    font-size: 11px;
-    font-size: 0.73333rem;
-  }
-}
-
-.Note ul li p span {
-  margin-left: 12px;
-}
-
-.Note ul li p a {
-  color: #f47c3b;
-}
-
-.Note ul li p a:hover {
-  text-decoration: underline;
-}
-
-.Note ul li p a::after {
-  margin: 0 5px 0 5px;
-  padding-right: 13px;
-  background: url(../images/icon_newwin.png) no-repeat 0 0;
-  background-size: contain;
-  content: '';
-}
-
-.Note .Note--space {
-  margin-left: 26px;
-}
-
-.footer {
-  padding: 0 39px;
-  text-align: left;
-}
-
-.footer a,
-.footer p {
-  color: #555555;
-  font-size: 12px;
-  font-size: 0.8rem;
-}
-
-@media only screen and (max-width: 576px) {
-  .footer {
-    height: 100%;
-    margin: 24px 0 0 0;
-    padding: 0 27px;
-  }
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer__navi {
-  display: flex;
-  justify-content: space-between;
-  margin: 11px 0;
-}
-
-.footer__navi ul {
-  width: 564px;
-  margin-left: -10px;
-}
-
-.footer__navi ul li {
-  display: inline-block;
-  padding: 2px 10px;
-  vertical-align: middle;
-  border-right: 1px solid black;
-}
-
-@media only screen and (max-width: 576px) {
-  .footer__navi ul li {
-    margin-top: 11px;
-    padding: 0 4px;
-    line-height: 17px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .footer__navi__last {
-    border-right: none !important;
-  }
-}
-
-.footer__logo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__logo__description {
-  font-size: 10.5px !important;
-  font-size: 0.7rem !important;
-  width: 602px;
-  margin: 0 11px;
-  margin: 14px 0;
-  color: #999999 !important;
-  line-height: 14px;
-}
-
-@media only screen and (min-width: 576px) {
-  .footer__logo__image {
-    margin: -16px -7px;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .footer__logo__image {
-    position: relative;
-    width: 31%;
-  }
-  .footer__logo__image img {
-    position: absolute;
-    top: 64%;
-    left: 84%;
-    width: auto;
-    height: 133%;
-    transform: translate(-50%, -70%);
-    cursor: pointer;
-  }
-}
-
-.footer__address {
-  height: 40px;
-}
+/*# sourceMappingURL=style.css.map */

@@ -70,6 +70,27 @@
             }
             padding-top: 4px;
             border-right: 1px solid $color_header_line;
+
+            &--cs {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 1em;
+                    height: 1em;
+                    margin-left: 5px;
+                    background-image: url(../images/icon_newwin.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &--cart {
+                &:before {
+                    content: "\f07a";
+                    font-family: "FontAwesome";
+                    margin-right: 5px;
+                }
+            }
         }
 
         &-support_icon {
