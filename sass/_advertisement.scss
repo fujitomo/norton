@@ -1,0 +1,42 @@
+﻿.advertisement {
+    &__line {
+        position: fixed;
+        top: 190px;
+        right: -25px;
+        cursor: pointer;
+        @include media(max-line) {
+            display: none;
+        }
+        img:hover {
+            opacity: 0.6;
+            filter: brightness(110%);
+        }
+
+        span {
+            position: relative;
+            top: -161px;
+            left: -30px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            padding-top: 3px;
+            font-weight: bold;
+            background: $color_linebox_font;
+            @include fontsize(20, $root_font_size);
+        }
+    }
+    &__feedback {
+        position: fixed;
+        top: 455px;
+        right: -48px;
+        width: 130px;
+        height: 35px;
+        margin: auto;
+        padding-top: 13px;
+        background: #d2d2d2;
+        //writing-mode: vertical-rl;
+        -webkit-transform: rotate(90deg);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+﻿.defense {
+    @include media(max-xs) {
+        display: none;
+    }
+    margin: 62px auto;
+    &__title {
+        width: 100%;
+        padding: 23px 20px;
+        color: $color_main;
+        text-align: left;
+        background-color: $color_defense_title;
+        border-radius: 5px;
+        @include fontsize(34, $root_font_size);
+        h2 {
+            font-weight: normal;
+        }
+    }
+
+    &__figure {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__button {
+        width: 600px;
+        height: 73px;
+        margin: 40px auto;
+        padding: 24px 0px 0px 13px;
+        background-color: $color_button;
+        border-radius: 5px;
+        @include fontsize(28, $root_font_size);
+        .fa-check-square-o:before {
+            padding: 0 1px;
+            color: #fff;
+            content: '\f07a'; /*アイコンの種類*/
+        }
+        a {
+            color: $color_main;
+            font-weight: bold;
+        }
+        &:hover {
+            opacity: 0.9;
+            filter: brightness(110%);
+        }
+    }
+}

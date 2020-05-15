@@ -1,0 +1,43 @@
+﻿.Note {
+    @include media(max-xxs) {
+        margin: 100 px 0;
+    }
+    ul {
+        margin-bottom: 59px;
+        li {
+            margin: 12px 0;
+            text-align: left;
+            list-style: none;
+            p {
+                @include fontsize(12, $root_font_size);
+                display: flex;
+                line-height: 15px;
+                @include media(max-xs) {
+                    @include fontsize(11, $root_font_size);
+                }
+                span {
+                    margin-left: 12px;
+                }
+                a {
+                    color: $color_guarantee;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &::after {
+                        margin: 0 5px 0 5px;
+                        padding-right: 13px;
+                        background: url(../images/icon_newwin.png) no-repeat 0 0;
+                        background-size: contain;
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+
+    padding-left: 0px;
+
+    .Note--space {
+        margin-left: 26px;
+    }
+}
