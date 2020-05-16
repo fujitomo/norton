@@ -8,6 +8,15 @@ body {
     //$root_font_size: $root_font_size;
 }
 
+img {
+    // だいたいほとんどの画像がこの幅と高さなので、最初からつけておくといい
+    width: 100%;
+    height: auto;
+
+    // 画像の下に無駄な余白できるのを防止するため必ずかく
+    vertical-align: bottom;
+}
+
 .wrapper {
     @include media(min-l) {
         width: 1042px;
