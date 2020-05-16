@@ -8,8 +8,14 @@
             margin: -8px 0px;
         }
         img {
+            // max-widthはpx等で指定する。
+            // width: 47%と指定しているので、%の数値がそれ以上またはそれ以下になるわけがないので、
+            // max-width: 81%は意味がない。
             width: 47%;
             max-width: 81%;
+
+            // imgの height: auto はすごくよく書くので、baseの部分でかいておく
+            // _base.scssご参照ください。
             height: auto;
             margin-top: 18px;
             margin-left: 72px;
