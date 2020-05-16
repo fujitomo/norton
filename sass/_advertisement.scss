@@ -26,6 +26,7 @@
             @include fontsize(20, $root_font_size);
         }
     }
+
     &__feedback {
         position: fixed;
         top: 455px;

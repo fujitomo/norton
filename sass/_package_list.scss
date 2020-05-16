@@ -263,7 +263,7 @@
                 background-color: #666666;
             }
         }
-    }
+    } // .package-list__table
     &__Note {
         padding-left: 11px;
         li {
@@ -291,8 +291,8 @@
         &--space {
             margin-left: 24px;
         }
-    }
-}
+    } // .package-list__Note
+} // .package-list
 
 .package-list-sp {
     height: 100%;
@@ -358,7 +358,7 @@
                 left: 2px;
             }
         }
-    }
+    } // .package-list-sp__swich
     &__table {
         display: flex;
         margin: -34px auto 0px;
@@ -552,5 +552,50 @@
                 }
             }
         }
-    }
-}
+    } // .package-list-sp__table
+} // .package-list-sp
+// 長くなると何の閉じ } かわからなくなるので、コメント残しておくといい
+
+/*
+** mediaクエリを何度も記述しているので、1箇所にまとめる。
+** 細かくたくさんmediaクエリを記述すると、（書いている最中は直感的で書きやすいが、）メンテナンス性が悪くなる。
+** 例↓
+--------------------------------------------------*/
+@include media(max-xs) {
+    .package-list {
+        &__table {
+
+        } // .package-list__table
+    } // .package-list
+    .package-list-sp {
+        &__table {
+
+        } // .package-list-sp__table
+    } // .package-list-sp
+} // media(max-xs)
+
+@include media(max-m) {
+    .package-list {
+        &__table {
+
+        } // .package-list__table
+    } // .package-list
+    .package-list-sp {
+        &__table {
+
+        } // .package-list-sp__table
+    } // .package-list-sp
+} // media(max-m)
+
+@include media(max-l) {
+    .package-list {
+        &__table {
+
+        } // .package-list__table
+    } // .package-list
+    .package-list-sp {
+        &__table {
+
+        } // .package-list-sp__table
+    } // .package-list-sp
+} // media(max-l)

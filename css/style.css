@@ -207,6 +207,23 @@ sup {
   }
 }
 
+.header__navi-border--cs:after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  background-image: url(../images/icon_newwin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__navi-border--cart:before {
+  content: "\f07a";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
 .header__navi-support_icon {
   margin: 0 0 0 5px;
   padding-right: 13px;
@@ -1315,6 +1332,11 @@ sup {
   justify-content: center;
 }
 
+/*
+** mediaクエリを何度も記述しているので、1箇所にまとめる。
+** 細かくたくさんmediaクエリを記述すると、（書いている最中は直感的で書きやすいが、）メンテナンス性が悪くなる。
+** 例↓
+--------------------------------------------------*/
 .relief {
   margin: 33px auto;
 }

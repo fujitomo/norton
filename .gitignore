@@ -1,0 +1,9 @@
+# .gitignoreでGitに反映させない、無視するファイル・フォルダリストを設定した方がいい。
+# （不要なファイルがGitにあがっているのが気になる）
+
+.DS_Store
+Thumbs.db
+.sass-cache/
+*.css.map
+node_modules/
+.vscode/
