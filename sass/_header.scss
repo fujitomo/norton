@@ -1,6 +1,11 @@
 ﻿.header {
     display: flex;
     margin-left: -110px;
+    &__cart {
+        position: absolute;
+        right: 5px;
+        width: 51%;
+    }
     &__logo {
         width: 27%;
         @include media(max-xs) {
@@ -12,7 +17,7 @@
             // width: 47%と指定しているので、%の数値がそれ以上またはそれ以下になるわけがないので、
             // max-width: 81%は意味がない。
             width: 47%;
-            max-width: 81%;
+            //max-width: 81%;
 
             // imgの height: auto はすごくよく書くので、baseの部分でかいておく
             // _base.scssご参照ください。
@@ -33,7 +38,7 @@
             display: none;
         }
         position: absolute;
-        top: 7px;
+        top: 16px;
         @include media(max-xs) {
             right: 61px;
         }
@@ -79,7 +84,6 @@
 
             &--cs {
                 &:after {
-                    content: "";
                     display: inline-block;
                     width: 1em;
                     height: 1em;
@@ -87,14 +91,16 @@
                     background-image: url(../images/icon_newwin.png);
                     background-repeat: no-repeat;
                     background-size: contain;
+                    content: '';
                 }
             }
 
             &--cart {
+                width: 52%;
                 &:before {
-                    content: "\f07a";
-                    font-family: "FontAwesome";
                     margin-right: 5px;
+                    font-family: 'FontAwesome';
+                    content: '\f07a';
                 }
             }
         }
@@ -133,20 +139,36 @@
 /* --------------------------------
      * ハンバーガーメニュー
      * -------------------------------- */
-
 .global-nav {
     position: fixed;
     top: -32px;
     right: -810px; /* これで隠れる */
     z-index: 200;
-    width: 368px; /* スマホに収まるくらい */
+    width: 78%; /* スマホに収まるくらい */
     height: 930px;
     //padding: 17px 0 0px 16px;
     overflow-y: auto; /* メニューが多くなったらスクロールできるように */
     text-align: left;
     background-color: $color_main;
     transition: all 0.6s;
+    &__list {
+        margin: 0;
+        margin-top: 122px;
+        padding: 0;
+        //padding: 103px 15px 9px 8px;
+        line-height: 31px;
+        list-style: none;
+        &--border {
+            padding: 10px 0;
+            border: 1px solid $color_header_button;
+            a {
+                margin-left: 30px;
+                color: $color_header_list_sp;
+            }
+        }
+    }
 }
+
 .hamburger {
     position: absolute;
     top: -16px;
@@ -156,56 +178,43 @@
     height: 40px;
     margin-top: 10px;
     cursor: pointer;
+    &__line {
+        position: absolute;
+        left: 11px;
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        border-radius: 4px;
+        transition: all 0.3s;
+        &--1 {
+            top: 14px;
+        }
+        &--2 {
+            top: 20px;
+            margin: 4px 0px;
+        }
+        &--3 {
+            top: 26px;
+            margin: 8px 0px;
+        }
+    } //&__line close
 }
-.global-nav__list {
-    margin: 0;
-    margin-top: 122px;
-    padding: 0;
-    //padding: 103px 15px 9px 8px;
-    line-height: 31px;
-    list-style: none;
-}
-.global-nav__list-border {
-    padding: 10px 0;
-    border: 1px solid $color_header_button;
-    a {
-        margin-left: 30px;
-        color: $color_header_list_sp;
-    }
-}
+
 .global-nav__item {
     padding: 0 14px;
     text-align: center;
+    a {
+        display: block;
+        padding: 8px 0;
+        color: #111;
+        text-decoration: none;
+        border-bottom: 1px solid #eee;
+        &:hover {
+            background-color: #eee;
+        }
+    }
 }
-.global-nav__item a {
-    display: block;
-    padding: 8px 0;
-    color: #111;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-}
-.global-nav__item a:hover {
-    background-color: #eee;
-}
-.hamburger__line {
-    position: absolute;
-    left: 11px;
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    border-radius: 4px;
-}
-.hamburger__line--1 {
-    top: 14px;
-}
-.hamburger__line--2 {
-    top: 20px;
-    margin: 4px 0px;
-}
-.hamburger__line--3 {
-    top: 26px;
-    margin: 8px 0px;
-}
+
 .black-bg {
     position: fixed;
     top: 0;
@@ -219,7 +228,11 @@
     opacity: 0;
     transition: all 0.6s;
 }
-/* 表示された時用のCSS */
+
+.is-active-gnav {
+    right: 0px;
+}
+// /* 表示された時用のCSS */
 .nav-open .global-nav {
     right: -31px;
 }
