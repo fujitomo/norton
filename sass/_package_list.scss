@@ -76,7 +76,9 @@
                 width: 196px;
                 vertical-align: middle;
                 background-color: $color_cell_td;
-
+                img {
+                    width: 20%;
+                }
                 @include media(max-m) {
                     width: 20%;
                     img {
@@ -362,8 +364,12 @@
     &__table {
         display: flex;
         margin: -34px auto 0px;
+        img {
+            width: 65%;
+        }
         &__col {
             justify-content: ﬂex-end;
+
             //width: 110px;
             width: 34%;
             background: $color_cell_td;
@@ -486,6 +492,9 @@
         }
         &__row {
             display: flex;
+            img {
+                width: 85%;
+            }
             &__col {
                 @include vh-center;
                 justify-content: ﬂex-end;
@@ -524,6 +533,9 @@
                 &__check {
                     height: 75px;
                     @include vh-center;
+                    img {
+                        width: 35%;
+                    }
                 }
                 &__month {
                     @include fontsize(10, $root_font_size);
@@ -564,12 +576,10 @@
 @include media(max-xs) {
     .package-list {
         &__table {
-
         } // .package-list__table
     } // .package-list
     .package-list-sp {
         &__table {
-
         } // .package-list-sp__table
     } // .package-list-sp
 } // media(max-xs)
@@ -577,12 +587,10 @@
 @include media(max-m) {
     .package-list {
         &__table {
-
         } // .package-list__table
     } // .package-list
     .package-list-sp {
         &__table {
-
         } // .package-list-sp__table
     } // .package-list-sp
 } // media(max-m)
@@ -590,12 +598,10 @@
 @include media(max-l) {
     .package-list {
         &__table {
-
         } // .package-list__table
     } // .package-list
     .package-list-sp {
         &__table {
-
         } // .package-list-sp__table
     } // .package-list-sp
 } // media(max-l)

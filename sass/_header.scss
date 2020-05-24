@@ -145,7 +145,7 @@
     right: -810px; /* これで隠れる */
     z-index: 200;
     width: 78%; /* スマホに収まるくらい */
-    height: 930px;
+    height: 1000%;
     //padding: 17px 0 0px 16px;
     overflow-y: auto; /* メニューが多くなったらスクロールできるように */
     text-align: left;
@@ -171,7 +171,7 @@
 
 .hamburger {
     position: absolute;
-    top: -16px;
+    top: -13px;
     right: -61px;
     z-index: 300;
     width: 59px;
@@ -233,8 +233,14 @@
     right: 0px;
 }
 // /* 表示された時用のCSS */
+.nav-open {
+    position: fixed;
+    top: 0;
+    right: 0px;
+}
 .nav-open .global-nav {
     right: -31px;
+    right: 0;
 }
 .nav-open .black-bg {
     visibility: visible;
@@ -243,7 +249,7 @@
 .nav-open .hamburger__line--1 {
     top: 27px;
     transform: rotate(48deg);
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 .nav-open .hamburger__line--2 {
     left: 50%;
@@ -252,5 +258,5 @@
 .nav-open .hamburger__line--3 {
     top: 20px;
     transform: rotate(-45deg);
-    transition: all 0.3s;
+    transition: all 0.2s;
 }

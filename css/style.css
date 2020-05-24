@@ -286,7 +286,7 @@ sup {
   z-index: 200;
   width: 78%;
   /* スマホに収まるくらい */
-  height: 930px;
+  height: 1000%;
   overflow-y: auto;
   /* メニューが多くなったらスクロールできるように */
   text-align: left;
@@ -314,7 +314,7 @@ sup {
 
 .hamburger {
   position: absolute;
-  top: -16px;
+  top: -13px;
   right: -61px;
   z-index: 300;
   width: 59px;
@@ -382,8 +382,15 @@ sup {
   right: 0px;
 }
 
+.nav-open {
+  position: fixed;
+  top: 0;
+  right: 0px;
+}
+
 .nav-open .global-nav {
   right: -31px;
+  right: 0;
 }
 
 .nav-open .black-bg {
@@ -394,7 +401,7 @@ sup {
 .nav-open .hamburger__line--1 {
   top: 27px;
   transform: rotate(48deg);
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .nav-open .hamburger__line--2 {
@@ -405,7 +412,7 @@ sup {
 .nav-open .hamburger__line--3 {
   top: 20px;
   transform: rotate(-45deg);
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .topbanner {
@@ -588,8 +595,8 @@ sup {
 
 .advertisement__line span {
   position: relative;
-  top: -161px;
-  left: -30px;
+  top: -207px;
+  left: 78px;
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -719,6 +726,10 @@ sup {
   width: 196px;
   vertical-align: middle;
   background-color: #fff7d6;
+}
+
+.package-list__table__tr__td img {
+  width: 20%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1099,6 +1110,10 @@ sup {
   margin: -34px auto 0px;
 }
 
+.package-list-sp__table img {
+  width: 65%;
+}
+
 .package-list-sp__table__col {
   justify-content: ﬂex-end;
   width: 34%;
@@ -1255,6 +1270,10 @@ sup {
   display: flex;
 }
 
+.package-list-sp__table__row img {
+  width: 85%;
+}
+
 .package-list-sp__table__row__col {
   display: flex;
   align-items: center;
@@ -1311,6 +1330,10 @@ sup {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.package-list-sp__table__row__col__check img {
+  width: 35%;
 }
 
 .package-list-sp__table__row__col__month {
